@@ -28,18 +28,18 @@
             
         </nav>
    </div>
-    <div class="menu-drop" style="z-index: 2;" >
-             <i class="fas fa-bars"></i>
-    </div>
-            <div style="z-index: 0;">
+    <div class="menu-drop" >
+             <i class="fas fa-fingerprint"></i>
+           
+            
              <ul class="dropdown">
                
              </ul>
             </div>
 
           <!-- MAIN BODY STARTS -->
-          <div class="intro" style="z-index: 0;">
-                    <h1><span style="color:teal;">Ben</span>jamin <span style="color:teal;">Dibley</span></h1>
+          <div class="intro">
+                    <h1><span style="color:rgb(199, 56, 68);">Ben</span>jamin <span style="color:rgb(199, 56, 68);">Dibley</span></h1>
                     <p class="sub-role" style="margin-top:-25px;margin-bottom:30px;">Front End Developer</p>
 
                     <div class="socials">
@@ -57,13 +57,11 @@
          <div class="about-head-wrapper">
         <a class="me-heading">My Story</a> 
         </div>
-        <div class="btn-div">
-          <button class="btn-style">My Journey</button>
-          <button class="btn-style">Hobbies</button>
-          <button class="btn-style">Random Facts</button>
-        </div>
-        <div></div>
-        
+        <article class="story"> 
+               <p id="story-config"><strong>Hey, I'm Ben.</strong><br><br>
+                   I'm a proud kiwi who's spent the last 20 years visiting and living in some pretty awesome cities around the globe. Currently I'm letting my passport cool down as my Wife and I are now living in the south of France and we are starting to settle in. Now, how did I get into Web Development? <h6 class="cont-reading cont-style">Read more</h6><span class="display"></span>
+               </p> 
+        </article>
       </div>
         <!-- 
         <article class="random">
@@ -99,10 +97,6 @@
         <div class="project"></div>
         <div class="project"></div>
         <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
       </section>
       
     
@@ -114,27 +108,5 @@
 
 
 <script src="app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyDKDWhJf-C49JsUgJA3vMS2bPXTyPKj7jE",
-    authDomain: "portfolio-8b444.firebaseapp.com",
-    projectId: "portfolio-8b444",
-    storageBucket: "portfolio-8b444.appspot.com",
-    messagingSenderId: "899848023570",
-    appId: "1:899848023570:web:26c35f28e8f7421472f2cb",
-    measurementId: "G-7EWJ8FNMDL"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
 </body>
 </html>
