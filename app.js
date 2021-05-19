@@ -5,20 +5,24 @@ const express = require('express');
 
 const app = express();
 
-app.listen(3000);
-
 app.set('view engine', 'ejs');
 
+app.listen(3000);
+
+app.use(express.static('public'));
+
+
+
 app.get('/', (req, res) => {
-    res.render('index') 
+    res.render('index', {title: 'DibDevs'}) 
 });
 
-app.get('/about', (req, res) => {
-    res.render('about')
+app.get('/projects', (req, res) => {
+    res.render('projects', {title: 'DibDevs | Projects'})
 });
 
 app.get('/contact', (req, res) => {
-    res.render('contact')
+    res.render('contact', {title: 'DibDevs | Contact'})
 });
 
 

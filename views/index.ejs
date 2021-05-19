@@ -1,45 +1,16 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/7c7d76f4cc.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
-    
-</head>
-<body>
-                            <!-- HEADERR -->
-    <div class="wrapper">
-        <nav class="nav">
-          <div class="logo">
-              <img class="img-style" src="assets/LOGO.svg" alt="Dib dev logo">
-                 </div>
-                    <ul class="list">
-                       <li class="h-list"><a href="#">Projects</a></li>
-                       <li class="h-list"><a href="#">ME</a></li>
-                       <li class="h-list"><a href="#">Resume</a></li>
-                       <li class="h-list"><a href="#">Contact</a></li>
-                    </ul>
-            
-        </nav>
-   </div>
-    <div class="menu-drop" style="z-index: 2;" >
-             <i class="fas fa-bars"></i>
-    </div>
-            <div>
-             <ul class="dropdown">
-               
-             </ul>
-            </div>
 
-          <!-- MAIN BODY STARTS -->
+<%-include('./partials/head.ejs') %>
+
+<body>
+<!---------------------------------------------- HEADERR ------------------------------------------------->
+ <%-include('./partials/nav.ejs') %>
+
+   
+
+          <!------------------------------- BODY HEADING -------------------------------------------->
           <div class="intro">
-                    <h1><span style="color:#54AB78;">Ben</span>jamin <span style="color:#54AB78;">Dibley</span></h1>
+                    <h1 class="me-header"><span style="color:rgb(197, 89, 98);">Ben</span>jamin <span style="color:rgb(197, 89, 98);">Dibley</span></h1>
                     <p class="sub-role" style="margin-top:-25px;margin-bottom:30px;">Front End Developer</p>
 
                     <div class="socials">
@@ -52,17 +23,13 @@
       </div>
      
       
-      <!-- Body Work -->
+      <!--------------------------------------BODY WORK ------------------------------------------------>
       <div class="me-container">
          <div class="about-head-wrapper">
-        <a class="me-heading">My Story</a> 
+        <p class="about-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum possimus a assumenda, aliquam amet eligendi dolores suscipit, perferendis quo magni at! Earum eligendi voluptatum tenetur rem libero animi magnam unde!LoremLorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum possimus a assumenda, aliquam amet eligendi dolores suscipit, perferendis quo magni at! Earum eligendi voluptatum tenetur rem libero animi magnam unde!Lorem</p>
         </div>
-        <div class="btn-div">
-          <button class="btn-style">My Journey</button>
-          <button class="btn-style">Hobbies</button>
-          <button class="btn-style">Random Facts</button>
-        </div>
-        <div></div>
+        
+        <div class="random-facts"></div>
         
       </div>
         <!-- 
@@ -95,14 +62,21 @@
       
       </div> -->
       <section class="projects-sect">
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
-        <div class="project"></div>
+        <div class="latest-project-container">
+          <h2 class="latest-project-header">My latest<br> Project</h2>
+          <img class="arrow-container" src="/Arrow.svg" alt="">
+        </div>
+        <div class="project">
+          <img src="/laptop-pic.jpg" alt="Project image" class="img-wrapper smaller-image">
+          <h1 class="project-header">Brain Dump</h1>
+          <p class="project-para">Brain Dump was originally created as a place where I could store my end of day learnings as a way of helping to solidify what I was learning.It was also a good starting project for me to integrate Node.js on the backend and work with MongoDB.<br><br><span><i class="fab fa-js-square"></i><i class="fab fa-node"></i><i class="fab fa-vuejs"></i></span></p>
+        </div>
+        <div class="browse-btn-container">
+        <button class="browse-btn-style"><a class="btn-project-style" href="./projects">Browse Projects</a></button>
+        </div>
+       
+      
+       
       </section>
       
     
@@ -110,10 +84,10 @@
 
 
 
+<%-include('./partials/footer.ejs') %>
 
 
-
-<script src="app.js"></script>
+<script src="sandbox.js"></script>
 
 
 </body>

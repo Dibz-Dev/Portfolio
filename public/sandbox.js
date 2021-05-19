@@ -1,7 +1,8 @@
 const para = document.querySelector('#story-config');
 const cont = document.querySelector('.cont-reading');
-const finger = document.querySelector('.fa-bars');
+const menu = document.querySelector('.fa-bars');
 const ul = document.querySelector('ul.dropdown');
+const navigation = document.querySelector('.nav');
 
 
 //         cont.addEventListener('click', () => {
@@ -30,47 +31,37 @@ const ul = document.querySelector('ul.dropdown');
 
 //   });
 
-  finger.addEventListener('click', () => {
+  menu.addEventListener('click', () => {
 
 
-            if(ul.classList.contains('dropdown')) {
-                finger.classList.add('anime')
-             } else if (!ul.classList.contains('dropdown')) {
-                finger.classList.remove('anime')
+            if(navigation.classList.contains('nav')) {
+                menu.classList.add('anime')
+             } else if (!navigation.classList.contains('nav')) {
+                menu.classList.remove('anime')
              }
     
-             if(ul.classList.contains('drop-style')) {
-                finger.classList.add('anime-rev')
-            } else if (!ul.classList.contains('drop-style')) {
-                finger.classList.remove('anime-rev')
+             if(!navigation.classList.contains('nav')) {
+                menu.classList.add('anime-rev')
+            } else if (navigation.classList.contains('nav')) {
+                menu.classList.remove('anime-rev')
             }
- const htmlList = `
-            <li class="d-list">Projects</li>
-            <li class="d-list">CV</li>
-            <li class="d-list">Contact</li>
-`;
 
-            if(ul.classList.contains('dropdown')) {
-                 ul.setAttribute('class', 'drop-style');
+            if(navigation.classList.contains('nav')) {
+                 navigation.classList.remove('nav')
             } else {
-                ul.setAttribute('class', 'dropdown')
+                navigation.classList.add('nav')
             }
 
-            if(ul.classList.contains('drop-style')) {
-            ul.innerHTML = htmlList;
-            } else {
-            ul.innerHTML = '';
-            }
-
+        
       
     
   });
 
             document.addEventListener('scroll', () => {
-            if(ul.classList.contains('drop-style')) {
-             ul.setAttribute('class', 'dropdown')
+            if(!navigation.classList.contains('nav')) {
+             navigation.classList.add('nav')
              } else {
-                 finger.classList.remove('anime')
+                 menu.classList.remove('anime')
              }
 
            
