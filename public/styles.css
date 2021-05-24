@@ -15,6 +15,7 @@
       width:300px;
       height:300px;
       margin:auto;
+      border:1px solid white;
       border-radius: 5px;
     }
 
@@ -32,6 +33,7 @@
       top: 0%;
       left:0%;
       width:100%;
+      z-index: 3;
   
   
   }
@@ -39,7 +41,7 @@
       display:flex;
       width:100vw;
       background-color: blueviolet;
-      transition: 0.4s;
+      transition: 0.2s;
       transition-timing-function:ease-out;
       border-bottom: 2px solid black;
       }
@@ -49,7 +51,7 @@
         margin-left:-500px;
         width:10vw;
         background-color: blueviolet;
-        transition: 0.4s;
+        transition: 0.2s;
         transition-timing-function: ease-out;
         
         }
@@ -71,6 +73,7 @@
     a.h-list{
          margin-top:-20px;
          color:white;
+         font-weight: 600;
          text-decoration: none;
         
     }
@@ -157,12 +160,76 @@
         cursor: pointer;
         
     }
+/* ------------------------------------------------HAMBURGER MENU---------------------------------------------- */
+.menu-container{
+  position: fixed;
+  width:40px;
+  top:3%;
+  right: 3%;
+  cursor: pointer;
+  z-index: 3;
+  
+  
+  
+  
+}
+
+.transform-top{margin-bottom: 10px;
+  border:2px solid black;
+  background-color: black;
+  transition: 0.2s;
+  border-radius: 20px;
+  
+  
+}
+
+.transform-top2 {
+  margin-top: 10px;
+  border:2px solid white;
+  background-color: white;
+  transform:rotate(42deg);
+  transform-origin: 50%;
+  transition:0.2s;
+  border-radius: 20px;
+  width:70%;
+  
+}
+
+.removable{
+  margin-bottom: 7px;
+  border:2px solid black;
+  background-color: black;
+  transition:0.5s;
+  width:60%;
+  border-radius: 20px;
+  
+}
+
+.transform-bottom{
+  border:2px solid black;
+  background-color: black;
+  margin-top: 8px;
+  transition: 0.2s;
+  border-radius: 20px;
 
 
+}
 
+.transform-bottom2{
+  border:2px solid white;
+  background-color: white;
+  margin-top: -5px;
+  transform:rotate(-42deg);
+  transform-origin: 50%;
+  transition:0.2s;
+  border-radius: 20px;
+  width:70%;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
     
 
-   /* --------------------------------------------------------------------------------------------------------- */
+ 
    /* -------------------------------------------------BODY---------------------------------------------------- */
    
    html{
@@ -190,6 +257,9 @@
 
   .sub-role{
       font-family: 'karla', sans-serif;
+      font-size: 1.7em;
+      font-weight: 200;
+      color:gray
 
   }
   
@@ -261,6 +331,8 @@
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    z-index: 0;
+    pointer-events: auto;
   }
 
  
@@ -285,7 +357,7 @@
   .project-header{
     grid-area: header;
     text-align: center;
-    font-family: 'karla', sans-serif;
+    font-family: 'saira', sans-serif;
     
     
 
@@ -296,7 +368,8 @@
     grid-area: sidebar;
     padding:20px;
     text-align: center;
-    font-size: 0.9em;
+    font-size: 1em;
+    font-family: 'karla', sans-serif;
     
   }
 
@@ -304,7 +377,6 @@
     flex-grow:2;
     grid-area: main-start;
     align-self: start;
-    padding: 20px;
     border-radius: 5px;
     
     
@@ -315,9 +387,7 @@
     align-self: center;
     margin-right: 10px;
     
-
-    
-  }
+   }
 
   .browse-btn-style{
     padding:10px 20px;
@@ -326,18 +396,14 @@
     font-family: 'karla', sans-serif;
     font-size: 1em;
     letter-spacing: 0.15em;
-    cursor: pointer;
     background-color: white;
     color: black;
     font-weight: 500;
-  }
-
-  .latest-project{
-    /* position: absolute; */
+    z-index: 3;
     
-
   }
 
+ 
   .latest-project-header{
     font-family: 'saira', sans-serif;
     font-size: 2em;
@@ -349,14 +415,19 @@
     font-size: 2em;
   }
 
-  a.btn-project-style{
+  a.project-link-style{
     text-decoration: none;
-    background-color:white;
-    color:black;
+    color: black;
+    
   }
+
+ 
+
+ 
 
 
   /* ---------------------------------------------------------------------------------------------------------- */
+  
   .socials{
     
     padding-bottom:30px;
@@ -490,7 +561,12 @@
    color: white;
 }
 
+/* --------------------------------------------TECH STACK------------------------------------------------------ */
 
+
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
 /* ---------------------------------------------CONTACT------------------------------------------------------- */
 
 .form-container{

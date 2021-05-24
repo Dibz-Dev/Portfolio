@@ -1,6 +1,6 @@
 const para = document.querySelector('#story-config');
 const cont = document.querySelector('.cont-reading');
-const menu = document.querySelector('.fa-bars');
+// const menu = document.querySelector('.fa-bars');
 const ul = document.querySelector('ul.dropdown');
 const navigation = document.querySelector('.nav');
 
@@ -31,22 +31,33 @@ const navigation = document.querySelector('.nav');
 
 //   });
 
-  menu.addEventListener('click', () => {
-
-
-            if(navigation.classList.contains('nav')) {
-                menu.classList.add('anime')
-             } else if (!navigation.classList.contains('nav')) {
-                menu.classList.remove('anime')
-             }
+  
+               
+    const wrapper = document.querySelector('.menu-container');
+    const topBar = document.querySelector('div#top');
+    const eraseBar = document.querySelector('div#middle');
+    const bottomBar = document.querySelector('div#bottom');
     
-             if(!navigation.classList.contains('nav')) {
-                menu.classList.add('anime-rev')
-            } else if (navigation.classList.contains('nav')) {
-                menu.classList.remove('anime-rev')
-            }
-
-            if(navigation.classList.contains('nav')) {
+    wrapper.addEventListener('click', () => {
+    
+   
+        if(topBar.classList.contains('transform-top')) {
+            topBar.setAttribute('class', 'transform-top2')
+        } else if(!topBar.classList.contains('transform-top')){
+            topBar.setAttribute('class', 'transform-top')
+        }
+    
+        if(topBar.classList.contains('transform-top2')) {
+            bottomBar.setAttribute('class', 'transform-bottom2')
+        } else if(!topBar.classList.contains('transform-top2')){
+            bottomBar.setAttribute('class', 'transform-bottom')
+        }
+    
+        if(wrapper.classList.contains('menu-container')) {
+            eraseBar.classList.toggle('removable')
+        }
+    
+           if(navigation.classList.contains('nav')) {
                  navigation.classList.remove('nav')
             } else {
                 navigation.classList.add('nav')
@@ -57,14 +68,5 @@ const navigation = document.querySelector('.nav');
     
   });
 
-            document.addEventListener('scroll', () => {
-            if(!navigation.classList.contains('nav')) {
-             navigation.classList.add('nav')
-             } else {
-                 menu.classList.remove('anime')
-             }
-
-           
-    
-  });
-   
+        
+ 
