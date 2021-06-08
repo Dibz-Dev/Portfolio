@@ -1,6 +1,11 @@
 
                             /* HEADER HEADER HEADER */
+.page-header{
+margin-top:100px;
+margin-left: 20px;
+font-family: 'saira', sans-serif;
 
+}
    
     /* ----------------------------------------IMAGES--------------------------------------------- */
     /* .img-style{
@@ -33,7 +38,7 @@
       top: 0%;
       left:0%;
       width:100%;
-      z-index: 3;
+      z-index: 0;
   
   
   }
@@ -63,7 +68,7 @@
         font-size: 1.2em;
         font-family: 'saira', sans-serif;
         letter-spacing: 0.3em;
-        margin:25px 0px;
+        margin:25px 0px 25px 15px;
         width:80%;
         
         
@@ -165,43 +170,50 @@
   position: fixed;
   width:40px;
   top:3%;
-  right: 3%;
+  right: 1.5%;
   cursor: pointer;
-  z-index: 3;
+  z-index: 1;
   
   
   
   
 }
 
-.transform-top{margin-bottom: 10px;
+.transform-top{
+  margin-bottom: 10px;
   border:2px solid black;
   background-color: black;
   transition: 0.2s;
   border-radius: 20px;
+  transform: rotate(180deg);
   
   
 }
 
-.transform-top2 {
-  margin-top: 10px;
+.transform-arrow-top {
+  margin-top: 13px;
   border:2px solid white;
   background-color: white;
-  transform:rotate(42deg);
-  transform-origin: 50%;
+  transform:rotate(-52deg);
+  transform-origin: 65%;
   transition:0.2s;
   border-radius: 20px;
-  width:70%;
+  width:50%;
   
 }
 
 .removable{
-  margin-bottom: 7px;
   border:2px solid black;
   background-color: black;
   transition:0.5s;
-  width:60%;
+  width:25px;
   border-radius: 20px;
+  
+}
+
+.open{
+  display:none;
+  
   
 }
 
@@ -211,23 +223,28 @@
   margin-top: 8px;
   transition: 0.2s;
   border-radius: 20px;
+  transform: rotate(-180deg);
 
 
 }
 
-.transform-bottom2{
+.transform-arrow-bottom{
   border:2px solid white;
   background-color: white;
-  margin-top: -5px;
-  transform:rotate(-42deg);
-  transform-origin: 50%;
+  margin-top: 2.5px;
+  transform:rotate(52deg);
+  transform-origin: 65%;
   transition:0.2s;
   border-radius: 20px;
-  width:70%;
+  width:50%;
 }
 
 /* ------------------------------------------------------------------------------------------------------------ */
     
+
+/* -------------------------------------------TECH STACK--------------------------------------------------- */
+
+
 
  
    /* -------------------------------------------------BODY---------------------------------------------------- */
@@ -235,22 +252,16 @@
    html{
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background-color: gainsboro;
+    box-sizing: border-box;
+    
+    
   }
   
-  article{
-    background-color: blueviolet;
-    border-top-right-radius: 70px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 70px;
-    border-bottom-right-radius: 10px;
-    border: 3px solid black;
-    width:100%;
-    height: auto;
-    margin: auto;
-    letter-spacing: 0.20em;
-    line-height: 1.1em;
-    font-size: 1em;
-  
+
+
+  a.social-link {
+    color: black;
   }
   
  
@@ -265,8 +276,10 @@
   
   
   .intro{
+
     margin-top:100px;
     text-align: center;
+    z-index: -1;
   }
 
   .me-header{
@@ -285,13 +298,9 @@
     display: grid;
     justify-content: center;
     padding:20px 50px;
+    z-index: -1;
    }
   
-  .random-list.loves-list{
-   
-    justify-content: center;
-    margin-top:50px;
-    }
   
 
   
@@ -301,10 +310,6 @@
     font-family: 'saira';
     font-size: 1em;
     cursor:pointer;
-}
-
-.about-header-wrapper{
-  
 }
 
 .about-para{
@@ -317,100 +322,9 @@
   
 }
   
-  /* -----------------------------------------PROJECTS SECT---------------------------------------------------- */
-  .projects-sect{
-    display: flex;
-    justify-content:space-around;
-    height:500px;
-    width:100vw;
-    padding: 60px 0px;
-    position: relative;
-    margin-left: -15px;
-    background-color: rgb(197, 89, 98);
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    z-index: 0;
-    pointer-events: auto;
-  }
-
  
-  .project{
-    width:50%;
-    height:auto;
-    display: grid;
-    padding:50px;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    border: 2px solid white;
-    box-shadow: 3px 3px 5px 6px rgba(41, 40, 40, 0.575);
-    border-radius: 5px;
-    justify-content: center;
-    grid-template-areas: 
-    "header header"
-    "main sidebar"
-    "main footer"
-    ;
 
-  }
-  .project-header{
-    grid-area: header;
-    text-align: center;
-    font-family: 'saira', sans-serif;
-    
-    
-
-  }
-
-  .project-para{
-    display: grid;
-    grid-area: sidebar;
-    padding:20px;
-    text-align: center;
-    font-size: 1em;
-    font-family: 'karla', sans-serif;
-    
-  }
-
-  .img-wrapper{
-    flex-grow:2;
-    grid-area: main-start;
-    align-self: start;
-    border-radius: 5px;
-    
-    
-    
-  }
-
-  .browse-btn-container{
-    align-self: center;
-    margin-right: 10px;
-    
-   }
-
-  .browse-btn-style{
-    padding:10px 20px;
-    border-radius: 3px;
-    border:1px solid white;
-    font-family: 'karla', sans-serif;
-    font-size: 1em;
-    letter-spacing: 0.15em;
-    background-color: white;
-    color: black;
-    font-weight: 500;
-    z-index: 3;
-    
-  }
-
- 
-  .latest-project-header{
-    font-family: 'saira', sans-serif;
-    font-size: 2em;
-    color:white;
-  }
-
-  .fa-js-square,.fa-node,.fa-vuejs{
+  [data-project-icons]{
     color:white;
     font-size: 2em;
   }
@@ -420,11 +334,6 @@
     color: black;
     
   }
-
- 
-
- 
-
 
   /* ---------------------------------------------------------------------------------------------------------- */
   
@@ -456,101 +365,17 @@
     color: black;
   }
   
-  /* .loves-list{
-   position: absolute;
-    top:70%;
-    left:25%
-  }
-  
-  .random-list{
-    position:absolute;
-    top:70%;
-    left:5%;
-  }
-    */
+ 
   
   
   /* CONTINUR READING */
 
-  .cont-style{
-    font-style: italic;
-    color: white;
-    opacity: 0.5;
-    font-size: 0.8em;
-    text-align: center;
-    animation-name: pulse;
-    animation-iteration-count: infinite;
-    animation-duration: 3s;
-
-  }
-
-  .cont-style:hover{
-    font-size: 1em;
-    cursor: pointer;
-  }
-
-
+  
   #story-config{
     padding:50px;
   }
  
 
-
-  .anime{
-    animation-name: react;
-    animation-duration: 0.3s;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-    color:white;
-  }
-
-  @keyframes react {
-     0%{
-       color:blueviolet;
-       transform: rotate(2000deg);
-       font-size: 2em;
-       border-radius: 100%;
-     }
-     50%{
-      color:blueviolet;
-      border-radius: 100%;
-      
-      
-       
-      
-     }
-     100%{
-      color:blueviolet;
-      
-     
-  }
-
-}
-
-.anime-rev{
-  animation-name: reverse;
-  animation-duration: 0.3s;
-  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  
-}
-
-@keyframes reverse {
-   0%{
-     color: blueviolet;
-     transform: rotate(-2000deg);
-   }
-   50%{
-    color:blueviolet;
-    
-     
-    
-   }
-   100%{
-   color:blueviolet;
-    
-   
-}
-
-}
 
 .btn-style{
    padding:10px;
@@ -560,59 +385,3 @@
    background-color:#7854AB;
    color: white;
 }
-
-/* --------------------------------------------TECH STACK------------------------------------------------------ */
-
-
-
-
-/* ------------------------------------------------------------------------------------------------------------ */
-/* ---------------------------------------------CONTACT------------------------------------------------------- */
-
-.form-container{
-   padding: 50px 0px;
-   width:70%;
-   margin: auto;
-   
-
-}
-
-.label-style{
-  display: block;
-  color: orangered;
-  margin: 5px auto;
-  width:100%;
-  
-  
-  
-}
-
-.input-style{
-  height:30px;
-  border: 1px solid black;
-  border-radius: 1.5px;
-  margin:10px 0px;
-  width:100%;
-  outline: none;
-  
-  
-  
-}
-
-
-
-
-
-.area-style{
-  border-radius: 3px;
-  height:100px;
-  width:100%;
-  border-radius: 1.5px;
-}
-
-.submit{
-  margin: 20px auto;
-  
-  
-}
-  

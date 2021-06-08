@@ -1,0 +1,170 @@
+<div id="buttons" class="btn-wrapper">
+    <button class="btn-about" data-modal-target="#about">More about me</button>
+    <button class="btn-about" data-modal-target="#tools">Tech Tools</button>
+</div>
+
+
+<div id="about" class="modal-wrapper">
+
+   
+        <div class="header-times">
+        <h3 class="modal-header">Couldn't Live Without..</h3> <span class="times">&times;</span>
+    </div>
+        
+            <ul class="modal-items">
+               <li>My Family</li>
+               <li>Running</li>
+               <li><span style="text-decoration:line-through; color:black">Beer</span> Coffee</li>
+               <li>
+               <i class="fas fa-hockey-puck"></i>
+               <i class="fas fa-futbol"></i>
+               <i class="fas fa-football-ball"></i>
+               </li>
+               <li>Beach</li>
+               <li>Sunday Roast</li>
+               <li>Food</li>
+               <li>Travelling</li>
+               <li>Web Development</li>
+            </ul>
+             
+           
+    
+
+</div>
+
+<div id="tools" class="modal-wrapper">
+
+   
+    <div class="tech-times">
+    <h3 class="modal-header">My Tool Box</h3> <span class="times">&times;</span>
+</div>
+    
+        <ul class="modal-items">
+           <li>HTML</li>
+           <li>CSS (Bootstrap & Tailwind)</li>
+           <li>Javascript</li>
+           <li>React</li>
+           <li>Node.js</li>
+           <li>MongoDB & Firebase</li>
+        </ul>
+         
+       
+
+
+</div>
+
+<div id="overlay"></div>
+
+
+<style>
+
+.btn-wrapper {
+    margin:auto;
+    padding: 10px;
+  }
+
+  .btn-about {
+      padding:10px;
+      margin:0 10px;
+      border-radius: 3px;
+      border: 1px solid black;
+      outline: none;
+      cursor: pointer;
+      color: rgb(197, 89, 98);
+      background-color: white;
+  }
+
+  .btn-about:hover {
+     transform: scale(1.1);
+  }
+
+  .header-times, .tech-times {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 10px;
+  }
+
+  .modal-header {
+      padding-left: 20px;
+      font-family: 'saira', sans-serif;
+  }
+
+  .times{
+      margin-top: -5px;
+      font-size: 1.5em;
+      font-weight: 800;
+      cursor: pointer;
+      
+      
+  }
+
+  .times:hover{
+      transform: scale(1.1);
+      
+      
+  }
+
+  
+
+    #overlay {
+        transform: scale(0);
+    }
+
+    #overlay.active {
+      position: fixed;
+      max-height: 100vh;
+      top:0%;
+      bottom:0%;
+      right:0%;
+      left: 0%;
+      background-color: rgba(77, 76, 76, 0.836);
+      pointer-events: all;
+      transform: scale(1);
+      
+      
+    }
+
+    .modal-wrapper {
+    transform: translate(-50% ) scale(0);
+    display: none;
+    transition: 1s;
+   }
+
+
+  .modal-wrapper.active {
+      display: block;
+      position: fixed;
+      left: 50%;
+      top:20%;
+      height:320px;
+      width:350px;
+      transform: translate(-50% ) scale(1);
+      background-color: white;
+      z-index: 20;
+      border-radius: 20px;
+      transition: 1s;
+      
+      }
+
+      .modal-items{
+          margin-top: -7px;
+          justify-content: center;
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 10px;
+
+      }
+
+      li {
+          padding: 3px 0px 5px 10px;
+          line-height: 1em;
+          letter-spacing: 0.2em;
+          color: rgb(197, 89, 98);
+          
+      }
+
+
+
+
+</style>

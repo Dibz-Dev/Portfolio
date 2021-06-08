@@ -25,5 +25,12 @@ app.get('/contact', (req, res) => {
     res.render('contact', {title: 'DibDevs | Contact'})
 });
 
+app.get('/about', (req, res) => {
+    res.render('about', {title: 'DibDevs | About'})
+});
+
+app.use((req, res) => {
+    res.status(404).render('404', {title:'Page Not Found'})
+});
 
 

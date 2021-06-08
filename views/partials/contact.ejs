@@ -1,0 +1,99 @@
+<div class="contact">
+    <div class="page-header">                      
+        <h1>Contact</h1>
+      </div>
+
+    <form id="contact" class="form-container" action="" autocomplete="off">
+    <div class="name-box">
+        <label class="label-style" for="name" >Name:</label>
+        <input class="input-style" id="name" name="title" type="text"required>
+    </div>
+    <div class="email-box">
+        <label class="label-style" for="email">Email:</label>
+        <input class="input-style" id="email" name="Email" type="email" required>
+    </div>
+    <div class="comments-box">
+        <label class="label-style" for="comments">Tell me:</label>
+        <textarea class="area-style" name="comments" id="comments" required></textarea>
+    </div>
+        <button class="submit">Submit</button>
+    </form>
+
+</div>
+
+
+
+    <style>
+
+.contact {
+    z-index: -1;
+
+}
+
+
+.form-container{
+    padding: 50px 0px;
+    width:60%;
+    margin: auto;
+    
+}
+
+.name-box, .email-box, .comments-box {
+    width:50%;
+    margin: auto;
+    
+    
+}
+
+.label-style{
+  display: block;
+  color: rgb(197, 89, 98);
+  letter-spacing: 0.2em;
+  font-family: 'karla', sans-serif;
+  font-weight: 500;
+  margin: 5px auto;
+  width:100%;
+  
+}
+
+.input-style{
+  height:30px;
+  border: 1px solid black;
+  border-radius: 2px;
+  margin:10px 0px;
+  width:100%;
+  outline: none;
+  
+}
+
+.area-style{
+  height:100px;
+  width:100%;
+  border-radius: 2px;
+  border: 1px solid black;
+}
+
+.submit{
+    position: absolute;
+    margin:0;
+    margin-top: 10px;
+    left:50%;
+    transform: translate(-50%);
+    background-color: rgb(197, 89, 98);
+    color:white; 
+    padding:8px 15px;
+    border-radius: 3px;
+    border-color: white;
+    letter-spacing: 0.2em;
+    outline:none;
+    cursor: pointer;
+    z-index: -1;
+    
+
+  
+  
+}
+
+    </style>
+</body>
+</html>

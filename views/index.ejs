@@ -1,10 +1,10 @@
-<html lang="en">
+<html  id="home" lang="en">
 
 <%-include('./partials/head.ejs') %>
 
-<body>
+<body class="active">
 <!---------------------------------------------- HEADERR ------------------------------------------------->
- <%-include('./partials/nav.ejs') %>
+<%-include('./partials/nav.ejs') %>
 
    
 
@@ -15,11 +15,11 @@
 
                     <div class="socials">
         
-                        <i class="fab fa-twitter"></i>
-                        <i class="fab fa-github"></i>
-                        <i class="fab fa-linkedin"></i>
+                      <a class="social-link" href="https://twitter.com/Dibdevs"><i class="fab fa-twitter"></i></a> 
+                      <a class="social-link" href="https://github.com/Dibz-Dev"> <i class="fab fa-github"></i></a>
+                      <a class="social-link" href="https://www.linkedin.com/in/dibs-dev/"><i class="fab fa-linkedin"></i></a>
                       </div>
-       
+                     
       </div>
      
       
@@ -28,57 +28,16 @@
          <div class="about-head-wrapper">
         <p class="about-para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum possimus a assumenda, aliquam amet eligendi dolores suscipit, perferendis quo magni at! Earum eligendi voluptatum tenetur rem libero animi magnam unde!LoremLorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum possimus a assumenda, aliquam amet eligendi dolores suscipit, perferendis quo magni at! Earum eligendi voluptatum tenetur rem libero animi magnam unde!Lorem</p>
         </div>
-        
-        <div class="random-facts"></div>
-        
+       
+        <%-include('./partials/modal.ejs') %>
+
       </div>
-        <!-- 
-        <article class="random">
-            <ul class="random-list display">
-               <li>Ive lived for atleast 10 years in each of New Zealand, Australia and England. I now live in France</li>
-               <li>Im a huge fan of the mighty All Blacks, QPR and the Carolina Hurricanes. I'm also basically into any sport that New Zealand is involved in.</li>
-               <li></li>
-            </ul>
-        </article>
-        <article class="loves">
-             <ul class="loves-list display">
-                <li>My Family</li>
-                <li>Food</li>
-                <li><span style="text-decoration:line-through;">Beer</span> Coffee</li>
-                <li>
-                <i class="fas fa-hockey-puck"></i>
-                <i class="fas fa-futbol"></i>
-                <i class="fas fa-football-ball"></i>
-                </li>
-                <li>Running</li>
-                <li>Web Development</li>
-                <li>Food</li>
-                <li>Travelling</li>
-                <li>Food</li>
-              </article>
-            </ul>
-        <a class="me-heading">| Random Facts |</a> <a class="me-heading">Loves</a>
+       
+        <%-include('./partials/projects.ejs') %>
         
-      
-      </div> -->
-      <section class="projects-sect">
-        <div class="latest-project-container">
-          <h2 class="latest-project-header">My latest<br> Project</h2>
-          <img class="arrow-container" src="/Arrow.svg" alt="">
-        </div>
-        <div class="project">
-          <img src="/laptop-pic.jpg" alt="Project image" class="img-wrapper smaller-image">
-          <h1 class="project-header">Brain Dump</h1>
-          <p class="project-para">Brain Dump was originally created as a place where I could store my end of day learnings as a way of helping to solidify what I was learning.It was also a good starting project for me to integrate Node.js on the backend and work with MongoDB.<br><br><span><i class="fab fa-js-square"></i><i class="fab fa-node"></i><i class="fab fa-vuejs"></i></span></p>
-        </div>
-        <div class="browse-btn-container">
-        <button class="browse-btn-style"><a class="project-link-style" href="./projects">Browse Projects</a></button>
-        </div>
-       
-      
-       
-      </section>
-      
+     
+
+<%-include('./partials/contact.ejs') %>
     
       
 
@@ -87,8 +46,32 @@
 <%-include('./partials/footer.ejs') %>
 
 
-<script src="sandbox.js"></script>
+
 
 
 </body>
 </html>
+
+
+ <!-- 
+      
+        
+         -->
+ <!-- <section class="projects-sect">
+        <div class="latest-project-container">
+          <h2 class="latest-project-header">My latest<br> Project</h2>
+          <img class="arrow-container" src="/Arrow.svg" alt="">
+        </div>
+        <div class="project">
+          <img src="/laptop-pic.jpg" alt="Project image" class="img-wrapper smaller-image">
+          <h1 class="project-header">Brain Dump</h1>
+          <p class="project-para">Brain Dump was originally created as a place where I could store my end of day learnings as a way of helping to solidify what I was learning.It was also a good starting project for me to integrate Node.js on the backend and work with MongoDB.<br><br><span><i data-project-icons class="fab fa-js-square"></i><i data-project-icons class="fab fa-node"></i><i data-project-icons class="fab fa-vuejs"></i></span></p>
+        </div>
+        <div class="browse-btn-container">
+        <button class="browse-btn-style"><a class="project-link-style" href="./projects">Browse Projects</a></button>
+        </div>
+       
+      
+       
+      </section>
+       -->
