@@ -1,28 +1,53 @@
 const container = document.querySelector('.menu-container')
+const clickAnyNav = document.querySelectorAll('.h-list')
+
+
+clickAnyNav.forEach(link => {
+link.addEventListener('click', (e) => {
+        closeNav(e)
+     })
+})
 
 
         
  container.addEventListener('click', () => {
+    const nav = document.querySelector('nav')
+    if(nav.classList.contains('nav')) {
+      openNav()
+    } else {
+      closeNav()
+    }
+   
+
+ })
+
+ function openNav() {
 
     const top = document.getElementById('top')
     const middle = document.getElementById('middle')
     const bottom = document.getElementById('bottom')
     const nav = document.querySelector('nav')
 
-    if(nav.classList.contains('nav')) {
-        top.setAttribute('class', 'transform-arrow-top')
-        middle.setAttribute('class', 'open')
-        bottom.setAttribute('class', 'transform-arrow-bottom')
-        nav.classList.remove('nav')
-    } else {
-        top.setAttribute('class', 'transform-top')
-        middle.setAttribute('class', 'removable')
-        bottom.setAttribute('class', 'transform-bottom')
-        nav.classList.add('nav')
+    top.setAttribute('class', 'transform-arrow-top')
+    middle.setAttribute('class', 'open')
+    bottom.setAttribute('class', 'transform-arrow-bottom')
+    nav.classList.remove('nav')
+ }
 
-    }
+ function closeNav() {
+    const top = document.getElementById('top')
+    const middle = document.getElementById('middle')
+    const bottom = document.getElementById('bottom')
+    const nav = document.querySelector('nav')
 
- })
+    top.setAttribute('class', 'transform-top')
+    middle.setAttribute('class', 'removable')
+    bottom.setAttribute('class', 'transform-bottom')
+    nav.classList.add('nav')
+
+
+ }
+
 
  const aboutToolsBtn = document.querySelectorAll('[data-modal-target]')
  const closeBtn = document.querySelectorAll('.times')
@@ -41,6 +66,8 @@ const container = document.querySelector('.menu-container')
      closeModal(close)
      })
  })
+
+
 
  function closeModal(modal) {
      
