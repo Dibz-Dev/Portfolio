@@ -1,12 +1,29 @@
-const container = document.querySelector('.menu-container')
-const clickAnyNav = document.querySelectorAll('.h-list')
 
 
-clickAnyNav.forEach(link => {
+const container = document.querySelector('.menu-container');
+const clickAnyNav = document.querySelectorAll('.h-list');
+
+const aboutToolsBtn = document.querySelectorAll('[data-modal-target]');
+const closeBtn = document.querySelectorAll('.times');
+const overlay = document.querySelector('#overlay');
+const about = document.querySelector('#about');
+const tools = document.querySelector('#tools');
+const body = document.querySelector('body');
+const form = document.querySelector('#contact');
+
+const feedback = document.querySelector('#feedback-container');
+
+
+
+const api_Url = "http://localhost:3000/getFeedback";
+
+
+
+ clickAnyNav.forEach(link => {
 link.addEventListener('click', (e) => {
         closeNav(e)
      })
-})
+ })
 
 
         
@@ -28,30 +45,26 @@ link.addEventListener('click', (e) => {
     const bottom = document.getElementById('bottom')
     const nav = document.querySelector('nav')
 
-    top.setAttribute('class', 'transform-arrow-top')
+    top.classList.add('active')
     middle.setAttribute('class', 'open')
-    bottom.setAttribute('class', 'transform-arrow-bottom')
+    bottom.classList.add('active')
     nav.classList.remove('nav')
  }
 
- function closeNav() {
+   function closeNav() {
     const top = document.getElementById('top')
     const middle = document.getElementById('middle')
     const bottom = document.getElementById('bottom')
     const nav = document.querySelector('nav')
 
-    top.setAttribute('class', 'transform-top')
+    top.classList.remove('active')
     middle.setAttribute('class', 'removable')
-    bottom.setAttribute('class', 'transform-bottom')
+    bottom.classList.remove('active')
     nav.classList.add('nav')
 
 
  }
 
-
- const aboutToolsBtn = document.querySelectorAll('[data-modal-target]')
- const closeBtn = document.querySelectorAll('.times')
- const overlay = document.getElementById('overlay')
 
     aboutToolsBtn.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -66,7 +79,6 @@ link.addEventListener('click', (e) => {
      closeModal(close)
      })
  })
-
 
 
  function closeModal(modal) {
@@ -87,3 +99,68 @@ link.addEventListener('click', (e) => {
        
 
  }
+
+ overlay.addEventListener('click', (e) => {
+
+   
+
+   overlay.classList.remove('active')
+   about.classList.remove('active')
+   tools.classList.remove('active')
+
+
+  console.log('clicked')
+ })
+
+ body.addEventListener('wheel', () => {
+
+   
+   let nav = document.querySelector('nav')
+
+   if(!nav.classList.contains('nav')) {
+      closeNav()
+   }
+
+   
+ })
+
+ 
+
+ form.addEventListener('submit', (e) => {
+    
+   e.preventDefault();
+
+
+ })
+
+
+ const getFeedback = async () => {
+
+  const query = await fetch(api_Url);
+  const data = await query.json()
+
+  const matches = data.map(comment => {
+
+    feedback.innerHTML += 
+     ` <div>
+       <div id="name" class="name">
+       <h4 class="name-comment-style"><strong>Posted by:</strong> ${data[0].name}</h4>
+       </div>
+       <div id="feedback" class="feedback">
+       <p class="feedback-comment-style"><strong>Feedback:</strong> ${data[0].feedback}</p>
+       </div> 
+       </div> 
+      `
+    
+  })
+  
+
+  
+
+  
+
+  
+  
+  }
+
+//  getFeedback()

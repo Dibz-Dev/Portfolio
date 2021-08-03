@@ -1,6 +1,6 @@
 <div id="buttons" class="btn-wrapper">
-    <button class="btn-about" data-modal-target="#about">More about me</button>
-    <button class="btn-about" data-modal-target="#tools">Tech Tools</button>
+    <button class="btn-about" data-modal-target="#about">Things I Love...</button>
+    <button class="btn-about" data-modal-target="#tools">My Tool Box</button>
 </div>
 
 
@@ -15,6 +15,7 @@
                <li>My Family</li>
                <li>Running</li>
                <li><span style="text-decoration:line-through; color:black">Beer</span> Coffee</li>
+               <li>Coding</li>
                <li>
                <i class="fas fa-hockey-puck"></i>
                <i class="fas fa-futbol"></i>
@@ -24,7 +25,7 @@
                <li>Sunday Roast</li>
                <li>Food</li>
                <li>Travelling</li>
-               <li>Web Development</li>
+               
             </ul>
              
            
@@ -41,11 +42,12 @@
     
         <ul class="modal-items">
            <li>HTML</li>
-           <li>CSS (Bootstrap & Tailwind)</li>
+           <li>CSS </li>
            <li>Javascript</li>
            <li>React</li>
            <li>Node.js</li>
-           <li>MongoDB & Firebase</li>
+           <li>Express</li>
+           <li>MongoDB</li>
         </ul>
          
        
@@ -53,7 +55,7 @@
 
 </div>
 
-<div id="overlay"></div>
+<div id="overlay" class="overlay"></div>
 
 
 <style>
@@ -66,16 +68,19 @@
   .btn-about {
       padding:10px;
       margin:0 10px;
-      border-radius: 3px;
-      border: 1px solid black;
+      border-radius: 10px;
+      border: 2px solid rgb(197, 89, 98);
       outline: none;
       cursor: pointer;
       color: rgb(197, 89, 98);
-      background-color: white;
+      font-weight: bold;
+      background-color: gainsboro;
+      width:170px;
   }
 
   .btn-about:hover {
      transform: scale(1.1);
+     background-color: white;
   }
 
   .header-times, .tech-times {
@@ -92,8 +97,8 @@
 
   .times{
       margin-top: -5px;
-      font-size: 1.5em;
-      font-weight: 800;
+      font-size: 2em;
+      font-weight: bold;
       cursor: pointer;
       
       
@@ -107,18 +112,18 @@
 
   
 
-    #overlay {
+    .overlay {
         transform: scale(0);
     }
 
-    #overlay.active {
+    .overlay.active {
       position: fixed;
       max-height: 100vh;
       top:0%;
       bottom:0%;
       right:0%;
       left: 0%;
-      background-color: rgba(77, 76, 76, 0.836);
+      background-color: rgba(77, 76, 76, 0.897);
       pointer-events: all;
       transform: scale(1);
       
@@ -143,6 +148,7 @@
       background-color: white;
       z-index: 20;
       border-radius: 20px;
+      border: 5px solid gainsboro;
       transition: 1s;
       
       }

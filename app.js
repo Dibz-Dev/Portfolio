@@ -1,33 +1,57 @@
-const fs = require('fs');
-const http = require('http');
 
 const express = require('express');
+const mongoose = require('mongoose');
+const Feedback = require('./models/messages')
+require('dotenv').config();
 
 const app = express();
 
+
+
+// MONGODB CONNECTION------------------------------------
+
+const dbURI = process.env.API_KEY;
+
+mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
+.then((result) => app.listen(3000))
+.catch((err) => console.log(err))
+
+// MIDDLEWARE----------------------------------
+
 app.set('view engine', 'ejs');
-
-app.listen(3000);
-
 app.use(express.static('public'));
+app.use(express.urlencoded({extended: true}));
+app.use(express.json()); 
 
 
 
-app.get('/', (req, res) => {
-    res.render('index', {title: 'DibDevs'}) 
+// ROUTES ---------------------------------------
+
+app.get('/home', (req, res) => {
+    res.render('index.ejs', {title: 'DibDevs'}) 
 });
 
-app.get('/projects', (req, res) => {
-    res.render('projects', {title: 'DibDevs | Projects'})
-});
+app.post('/api/feedback', (req, res) => {
 
-app.get('/contact', (req, res) => {
-    res.render('contact', {title: 'DibDevs | Contact'})
-});
+     const feedback = new Feedback(req.body)
 
-app.get('/about', (req, res) => {
-    res.render('about', {title: 'DibDevs | About'})
-});
+     console.log(feedback)
+
+     feedback.save()
+    .then((result) => {
+        res.redirect('../home')
+    }).catch((err) => console.log(err))
+
+})
+
+app.get('/getFeedback', async (req, res) => {
+
+    const feedback = await Feedback.find({})
+    res.json(feedback)
+
+    
+})
+
 
 app.use((req, res) => {
     res.status(404).render('404', {title:'Page Not Found'})
