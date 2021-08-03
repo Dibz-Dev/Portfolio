@@ -15,7 +15,8 @@ const feedback = document.querySelector('#feedback-container');
 
 
 
-const api_Url = "https://dibspersonal.herokuapp.com/getFeedback";
+// const api_Url = "https://dibspersonal.herokuapp.com/getFeedback";
+const api_Url = "http://localhost:3000/getFeedback";
 
 
 
