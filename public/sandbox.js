@@ -1,5 +1,4 @@
 
-
 const container = document.querySelector('.menu-container');
 const clickAnyNav = document.querySelectorAll('.h-list');
 
@@ -10,11 +9,13 @@ const about = document.querySelector('#about');
 const tools = document.querySelector('#tools');
 const body = document.querySelector('body');
 const form = document.querySelector('#contact');
-
+const html = document.querySelector('html');
 const feedback = document.querySelector('#feedback-container');
 
-const api_Url = process.env.API_URL;
 
+
+// const api_Url = "https://dibspersonal.herokuapp.com/getFeedback";
+// const api_Url = "https://localhost:3000/getFeedback";
 
 
 
@@ -86,6 +87,7 @@ link.addEventListener('click', (e) => {
 
      modal.classList.remove('active')
      overlay.classList.remove('active')
+     html.classList.remove('active')
  }
  
 
@@ -95,7 +97,7 @@ link.addEventListener('click', (e) => {
 
        modal.classList.add('active')
        overlay.classList.add('active')
-       
+       html.classList.add('active')
 
  }
 
@@ -106,6 +108,7 @@ link.addEventListener('click', (e) => {
    overlay.classList.remove('active')
    about.classList.remove('active')
    tools.classList.remove('active')
+   html.classList.remove('active')
 
 
   console.log('clicked')
