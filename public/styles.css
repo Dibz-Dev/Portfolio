@@ -264,16 +264,6 @@ font-family: 'saira', sans-serif;
     z-index: -1;
    }
   
-  
-
-  
-  .me-heading{
-    padding-top:20px;
-    color:white;
-    font-family: 'saira';
-    font-size: 1em;
-    cursor:pointer;
-}
 
 .about-para{
   font-size: 1.3em;
@@ -282,6 +272,7 @@ font-family: 'saira', sans-serif;
   text-align: center;
   margin:auto;
   padding-bottom: 30px;
+  font-family: 'karla', sans-serif;
   
 }
   

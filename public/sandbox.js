@@ -13,10 +13,8 @@ const form = document.querySelector('#contact');
 
 const feedback = document.querySelector('#feedback-container');
 
+const api_Url = process.env.API_URL;
 
-
-// const api_Url = "https://dibspersonal.herokuapp.com/getFeedback";
-const api_Url = "http://localhost:3000/getFeedback";
 
 
 
@@ -129,7 +127,7 @@ link.addEventListener('click', (e) => {
 
  form.addEventListener('submit', (e) => {
     
-   e.preventDefault();
+  //  e.preventDefault();
 
 
  })

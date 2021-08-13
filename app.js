@@ -40,7 +40,7 @@ app.post('/api/feedback', (req, res) => {
 
      feedback.save()
     .then((result) => {
-        res.redirect('../home')
+        res.redirect('/')
     }).catch((err) => console.log(err))
 
 })
