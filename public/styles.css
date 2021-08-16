@@ -256,7 +256,10 @@ font-family: 'saira', sans-serif;
       font-family: 'karla', sans-serif;
       font-size: 1.7em;
       font-weight: 200;
-      color:gray
+      color:gray;
+      margin-top: -50px;
+      margin-bottom: 30px;
+      
 
   }
   
@@ -274,13 +277,6 @@ font-family: 'saira', sans-serif;
     font-size: 3.5em;
   }
 
-  @media (max-width:700px) {
-
-    .intro {
-
-      margin-top:140px;
-    }
-  }
   
   .me-container {
 
@@ -295,6 +291,7 @@ font-family: 'saira', sans-serif;
 
   font-size: 1.3em;
   letter-spacing: 0.1em;
+  line-height: 1.5;
   width:70%;
   text-align: center;
   margin:auto;
@@ -347,6 +344,17 @@ font-family: 'saira', sans-serif;
 
 {
 
+  .me-header {
+    font-size: 2.5em;
+  }
+
+  .sub-role {
+
+    font-size: 1.3em;
+    margin-top: -40px;
+    margin-bottom: 30px;
+  }
+
   .about-para {
 
     font-size: 1em;
@@ -359,7 +367,7 @@ font-family: 'saira', sans-serif;
 
   .intro {
 
-    margin-top: 80px;
+    margin-top: 100px;
   }
 
 
