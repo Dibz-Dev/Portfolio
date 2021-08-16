@@ -1,6 +1,7 @@
 
                             /* HEADER HEADER HEADER */
-.page-header{
+.page-header {
+
 margin-top:110px;
 margin-left: 20px;
 font-family: 'saira', sans-serif;
@@ -14,7 +15,8 @@ font-family: 'saira', sans-serif;
     /* ----------------------------------------IMAGES--------------------------------------------- */
 
 
-    .smaller-image{
+    .smaller-image {
+
       width:300px;
       height:300px;
       margin:auto;
@@ -22,7 +24,8 @@ font-family: 'saira', sans-serif;
       border-radius: 5px;
     }
 
-    .arrow-container{
+    .arrow-container {
+
       height:80px;
       transform: rotate(270deg);
       margin-left: 100px;
@@ -30,26 +33,30 @@ font-family: 'saira', sans-serif;
     }
 /* --------------------------------------------------------------------------------------------------- */
 /* ----------------------------------------------NAV------------------------------------------------ */
-    .wrapper{
+    .wrapper {
+
       display:flex;
       position: fixed;
       top: 0%;
       left:0%;
       width:100%;
-      z-index: 0;
+      z-index: 1;
   
   
   }
-    nav{
+    .nav.active{
+
       display:flex;
       width:100vw;
+      margin-left: 0;
       background-color: black;
       transition: 0.2s;
       transition-timing-function:ease-out;
       border-bottom: 2px solid black;
       }
   
-    .nav{
+    .nav {
+
         display:flex;
         margin-left:-500px;
         width:10vw;
@@ -59,7 +66,8 @@ font-family: 'saira', sans-serif;
         
         }
      
-      .list{
+      .list {
+
         display:flex;
         justify-content: space-around;
         align-items: center;
@@ -74,7 +82,8 @@ font-family: 'saira', sans-serif;
         
     }
 
-    a.h-list{
+    a.h-list {
+
       text-decoration: none;
       margin-top:-20px;
       color:white;
@@ -88,7 +97,7 @@ font-family: 'saira', sans-serif;
     }
     
   
-    [data-list-style]:hover{
+    [data-list-style]:hover {
       
       color:white;
       font-weight: 500;
@@ -103,12 +112,14 @@ font-family: 'saira', sans-serif;
 
          @media (max-width:700px) {
 
-           nav{
+           .nav.active{ 
+
            height:100vh;
          }
 
 
-          .list{
+          .list {
+
            display: flex;
            flex-direction: column;
            justify-content: space-evenly;
@@ -119,7 +130,8 @@ font-family: 'saira', sans-serif;
         }
    
 /* ------------------------------------------------HAMBURGER MENU------------------------------- */
-.menu-container{
+.menu-container {
+
   position: fixed;
   width:40px;
   top:3%;
@@ -132,7 +144,8 @@ font-family: 'saira', sans-serif;
   
 }
 
-.transform-top{
+.transform-top {
+
   margin-bottom: 10px;
   border:2px solid black;
   background-color: black;
@@ -155,7 +168,8 @@ font-family: 'saira', sans-serif;
   
 }
 
-.removable{
+.removable {
+
   border:2px solid black;
   background-color: black;
   transition:0.2s;
@@ -166,7 +180,7 @@ font-family: 'saira', sans-serif;
   
 }
 
-.open{
+.open {
 
   position: absolute;
   margin-top: -5px;
@@ -192,7 +206,8 @@ font-family: 'saira', sans-serif;
 
 }
 
-.transform-bottom.active{
+.transform-bottom.active {
+
   border:2px solid white;
   background-color: white;
   transform:rotate(52deg);
@@ -212,7 +227,8 @@ font-family: 'saira', sans-serif;
  
    /* -------------------------------------------------BODY---------------------------------------------------- */
    
-   html{
+   html {
+
     overflow-x: hidden;
     scroll-behavior: smooth;
     background-color: gainsboro;
@@ -221,7 +237,8 @@ font-family: 'saira', sans-serif;
     
   }
 
-  html.active{
+  html.active {
+
    overflow-y: hidden;
     
   }
@@ -234,7 +251,8 @@ font-family: 'saira', sans-serif;
   
  
 
-  .sub-role{
+  .sub-role {
+
       font-family: 'karla', sans-serif;
       font-size: 1.7em;
       font-weight: 200;
@@ -243,26 +261,29 @@ font-family: 'saira', sans-serif;
   }
   
   
-  .intro{
+  .intro {
 
     margin-top:100px;
     text-align: center;
     z-index: -1;
   }
 
-  .me-header{
+  .me-header {
+
     font-family: 'saira', sans-serif;
     font-size: 3.5em;
   }
 
   @media (max-width:700px) {
 
-    .intro{
+    .intro {
+
       margin-top:140px;
     }
   }
   
-  .me-container{
+  .me-container {
+
     display: grid;
     justify-content: center;
     padding:20px 50px;
@@ -270,7 +291,8 @@ font-family: 'saira', sans-serif;
    }
   
 
-.about-para{
+.about-para {
+
   font-size: 1.3em;
   letter-spacing: 0.1em;
   width:70%;
@@ -283,12 +305,14 @@ font-family: 'saira', sans-serif;
   
  
 
-  [data-project-icons]{
+  [data-project-icons] {
+
     color:white;
     font-size: 2em;
   }
 
-  a.project-link-style{
+  a.project-link-style {
+
     text-decoration: none;
     color: black;
     
@@ -298,16 +322,18 @@ font-family: 'saira', sans-serif;
  
  
   
-  /* CONTINUR READING */
+  /* CONTINUE READING */
 
   
-  #story-config{
+  #story-config {
+
     padding:50px;
   }
  
 
 
-.btn-style{
+.btn-style {
+
    padding:10px;
    font-size: 1em;
    border-radius: 10px;
@@ -321,15 +347,18 @@ font-family: 'saira', sans-serif;
 
 {
 
-  .about-para{
+  .about-para {
+
     font-size: 1em;
   }
 
-  .me-container{
+  .me-container {
+
     padding:10px 5px;
   }
 
-  .intro{
+  .intro {
+
     margin-top: 80px;
   }
 

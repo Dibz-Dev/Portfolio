@@ -22,6 +22,7 @@ const feedback = document.querySelector('#feedback-container');
  clickAnyNav.forEach(link => {
 link.addEventListener('click', (e) => {
         closeNav(e)
+        html.classList.remove('active')
      })
  })
 
@@ -29,10 +30,12 @@ link.addEventListener('click', (e) => {
         
  container.addEventListener('click', () => {
     const nav = document.querySelector('nav')
-    if(nav.classList.contains('nav')) {
-      openNav()
-    } else {
+    if(nav.classList.contains('active')) {
       closeNav()
+      html.classList.remove('active')
+    } else {
+      openNav()
+      html.classList.add('active')
     }
    
 
@@ -48,7 +51,7 @@ link.addEventListener('click', (e) => {
     top.classList.add('active')
     middle.setAttribute('class', 'open')
     bottom.classList.add('active')
-    nav.classList.remove('nav')
+    nav.classList.add('active')
  }
 
    function closeNav() {
@@ -60,7 +63,7 @@ link.addEventListener('click', (e) => {
     top.classList.remove('active')
     middle.setAttribute('class', 'removable')
     bottom.classList.remove('active')
-    nav.classList.add('nav')
+    nav.classList.remove('active')
 
 
  }
