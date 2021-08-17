@@ -358,6 +358,7 @@ font-family: 'saira', sans-serif;
   .about-para {
 
     font-size: 1em;
+    text-align: start;
   }
 
   .me-container {
