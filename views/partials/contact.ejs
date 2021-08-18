@@ -18,9 +18,11 @@
           
     <form id="contact" class="form-container" action="/api/feedback" method="POST" autocomplete="off">
         <div class="comments-box">
-            <label class="label-style" for="comments">Feedback</label>
+            <label class="label-style" for="name">Name</label>
 
             <input class="name-style" id="name" name="name" type="text" placeholder="Name" autocomplete="off" required>
+            <label class="label-style" for="comments">Feedback</label>
+
             <textarea class="area-style" id="feedback" name="feedback" type="text" placeholder="How did you find my portfolio?" required></textarea>
         </div>
             <button class="submit" type="submit">Submit</button>
