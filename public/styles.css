@@ -64,6 +64,8 @@ font-family: 'saira', sans-serif;
         background-color: black;
         transition: 0.2s;
         transition-timing-function: ease-out;
+        padding: 10px;
+        height:60px;
         
         }
      
@@ -71,13 +73,14 @@ font-family: 'saira', sans-serif;
 
         display:flex;
         justify-content: space-around;
-        align-items: center;
+        /* align-items: center; */
         list-style-type: none;
         font-size: 1.3em;
         font-family: 'saira', sans-serif;
         letter-spacing: 0.2em;
-        margin:25px 0px 25px 15px;
-        width:80%;
+        width:100%;
+       
+        
         
         
         
@@ -118,6 +121,7 @@ font-family: 'saira', sans-serif;
            .nav.active{ 
 
            height:100vh;
+           
          }
 
          .nav {
@@ -132,6 +136,7 @@ font-family: 'saira', sans-serif;
            flex-direction: column;
            justify-content: space-evenly;
            font-size: 1.5em;
+           
           }
          
      
