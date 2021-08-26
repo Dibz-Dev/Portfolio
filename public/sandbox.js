@@ -20,7 +20,7 @@ const feedback = document.querySelector('#feedback-container');
 
 
  clickAnyNav.forEach(link => {
-link.addEventListener('click', (e) => {
+ link.addEventListener('click', (e) => {
         closeNav(e)
         html.classList.remove('active')
      })
@@ -124,6 +124,7 @@ link.addEventListener('click', (e) => {
 
    if(!nav.classList.contains('nav')) {
       closeNav()
+      
    }
 
    

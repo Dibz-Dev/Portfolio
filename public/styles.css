@@ -50,9 +50,10 @@ font-family: 'saira', sans-serif;
       width:100vw;
       margin-left: 0;
       background-color: black;
-      transition: 0.2s;
+      transition: 0.5s;
       transition-timing-function:ease-out;
       border-bottom: 2px solid black;
+
       }
   
     .nav {
@@ -106,15 +107,22 @@ font-family: 'saira', sans-serif;
      
  }
 
-   
+     @media (max-width:700px) {
 
-    
+      html.active {
 
-         @media (max-width:700px) {
+        overflow-y: hidden;
+         
+       }
 
            .nav.active{ 
 
            height:100vh;
+         }
+
+         .nav {
+           height: 100vh;
+           transition: 0.5s;
          }
 
 
@@ -237,11 +245,6 @@ font-family: 'saira', sans-serif;
     
   }
 
-  html.active {
-
-   overflow-y: hidden;
-    
-  }
   
 
 
