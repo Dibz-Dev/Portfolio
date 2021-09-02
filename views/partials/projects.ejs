@@ -2,54 +2,53 @@
 
 <div id="projects-pane" class="projects-wrapper">
 
-  <div class="page-header">                      
-    <h1>Projects</h1>
-  </div>  
-  <div class="project-bg">
-    <div class="ind-project project-1">
-      
-        <div class="project-image-wrapper">
-            <img class="project-image-size" src="shopean.main.jpg" alt="image of main Shopean page">
-            
+        <div class="page-header">                      
+          <h1>Projects</h1>
+        </div> 
+
+        <div class="project-bg">
+              <div class="ind-project project-1">
+                
+                  <div class="project-image-wrapper">
+                      <img class="project-image-size" src="shopean.main.jpg" alt="image of main Shopean page">
+                  </div>
+                  
+                  <div class="header-para-project-wrapper">
+                    <h1 class="project-header">Shopean</h1>
+                  <ul class="project-list-wrapper">
+                        <li class="project-list">A functional Shopping list, Shopean stores shopping items, which can then be dynamically added to your shopping list in their respective categories.</li> 
+                        <li class="project-list">Backend: Server created using Node.js/Express to create and authenticate user profiles, MongoDB. </li>
+                        <li class="project-list">Frontend: Html, CSS and vanilla Javascript, hosted on Heroku.</li>
+                  </ul>
+                  <div class="project-btn-wrapper">
+                        <button class="btn-projects"><a href="https://shopean.herokuapp.com">Visit Shopean</a></button>
+                        <button class="btn-projects"><a href="https://github.com/Dibz-Dev/shopean">Source Code<i class="git fab fa-github"></i></a></button>
+                  </div>
+                </div>
+                
+              
+              </div>
+          <div class="ind-project project-2">
+                <div class="project-image-wrapper">
+                  <img class="project-image-size" src="weatherWatchNight.jpg" alt="image of main Shopean page">
+                </div>
+               <div class="header-para-project-wrapper">
+                      <h1 class="project-header">Weather Watch</h1>
+                  <ul class="project-list-wrapper"> 
+                        <li class="project-list">A simple weather app allowing you to check the current weather in any city around the world.</li>
+                        <li class="project-list">Weather watch takes user input and returns weather info from the AccuWeather API</li>
+                        <li class="project-list">Built with HTML, CSS and Javascript</li>
+                  </ul>
+                  <div class="project-btn-wrapper">
+                          <button class="btn-projects"><a href="https://dibs-weatherwatch.netlify.app/">Visit Live Site</a></button>
+                          <button class="btn-projects"><a href="https://github.com/Dibz-Dev/WeatherWatch">Source Code<i class="git fab fa-github"></i></a></button>
+                  </div>
+               </div>
+              
+            </div>
+                <div class="ind-project project-3" style="display: none" ></div>
+        
         </div>
-        <div class="header-para-project-wrapper">
-          <h1 class="project-header">Shopean</h1>
-         <ul class="project-list-wrapper">
-              <li class="project-list">A functional Shopping list, Shopean stores shopping items, which can then be dynamically added to your shopping list in their respective categories.</li> 
-              <li class="project-list">Backend: Server created using Node.js/Express to create and authenticate user profiles, MongoDB. </li>
-              <li class="project-list">Frontend: Html, CSS and vanilla Javascript, hosted on Heroku.</li>
-        </ul>
-        <div class="project-btn-wrapper">
-          <button class="btn-projects"><a href="https://shopean.herokuapp.com">Visit Shopean</a></button>
-          <button class="btn-projects"><a href="https://github.com/Dibz-Dev/shopean">Source Code<i class="git fab fa-github"></i></a></button>
-    </div>
-      </div>
-       
-     
-  </div>
-    <div class="ind-project project-2">
-      <div class="project-image-wrapper">
-        <img class="project-image-size" src="weatherWatchNight.jpg" alt="image of main Shopean page">
-    </div>
-  <div class="header-para-project-wrapper">
-    <h1 class="project-header">Weather Watch</h1>
-     <ul class="project-list-wrapper"> 
-          <li class="project-list">A simple weather app allowing you to check the current weather in any city around the world.</li>
-          <li class="project-list">Weather watch takes user input and returns weather info from the AccuWeather API</li>
-          <li class="project-list">Built with HTML, CSS and Javascript</li>
-    </ul>
-    <div class="project-btn-wrapper">
-      <button class="btn-projects"><a href="https://dibs-weatherwatch.netlify.app/">Visit Live Site</a></button>
-      <button class="btn-projects"><a href="https://github.com/Dibz-Dev/WeatherWatch">Source Code<i class="git fab fa-github"></i></a></button>
-</div>
-  </div>
-    
-    </div>
-    <div class="ind-project project-3" style="display: none" >
-   
-    </div>
-  
-  </div>
   </div>
 
 
@@ -227,8 +226,8 @@ li.project-list {
   
   color: black;
   font-family: 'karla', sans-serif;
-  font-size: 0.4rem;
-  margin-top: 0px;
+  font-size: 0.3rem;
+  /* margin-top: 0px; */
   
 
 } 
@@ -255,9 +254,6 @@ li.project-list {
   width: 90%;
   margin-top: -10px;
   margin-left: -25px;
-  
-
-
 
 }
 }
@@ -315,7 +311,7 @@ li.project-list {
   color: black;
   padding:5px;
   font-family: 'karla', sans-serif;
-  /* font-size: 0.8rem; */
+
 }
 
 
@@ -335,19 +331,8 @@ li.project-list {
   font-size: 1em;
 }
 
-@media (max-width: 300px)
-{
-  li.project-list {
-
-  
-
-font-size: 0.2rem;
 
 
-
-} 
-
-}
 
 
 
