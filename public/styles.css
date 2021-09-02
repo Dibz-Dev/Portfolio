@@ -107,7 +107,7 @@ font-family: 'saira', sans-serif;
      
  }
 
-     @media (max-width:700px) {
+     @media only screen and (max-width:700px) {
 
       html.active {
 
@@ -334,7 +334,7 @@ font-family: 'saira', sans-serif;
   }
 
 
-@media (max-width: 500px)
+@media only screen and (max-width: 500px)
 
 {
 
@@ -367,3 +367,284 @@ font-family: 'saira', sans-serif;
 
 
 }
+
+/* ---------------------------------PROJECTS------------------------------------- */
+
+.projects-wrapper {
+  z-index: -1;
+  width:100%;
+  
+}
+    
+
+.project-bg{
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  grid-gap: 10px;
+  width:90%;
+  margin:auto;
+  padding: 10px 5px;
+}
+
+.project-header {
+
+  text-align: center;
+  font-family: 'saira', sans-serif;
+  font-size: 1.4rem;
+  margin-top: -10px;
+}
+
+.project-image-size {
+
+  width:65%;
+  height:350px;
+  margin: auto;
+
+}
+
+
+
+img {
+
+  margin: 0px 2px;
+  border-radius: 3px;
+  border: 2px solid gainsboro;
+
+}
+
+.project-image-wrapper {
+
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  margin: 10px 0px;
+
+  
+  
+}
+
+.ind-project{
+  
+  padding: 10px;
+  background-color: rgb(197, 89, 98);
+  border-radius: 3px;
+  display:grid;
+  justify-self: center;
+  grid-template-columns: 1fr 1fr;
+  width:70%;
+  box-shadow: 0 3px 10px rgba(14, 13, 13, 0.548);
+  
+}
+
+@media only screen and (max-width: 1200px)
+{
+  .ind-project {
+  
+  width: 80%;
+}
+
+li.project-list {  
+
+  font-size: 0.9rem;
+ 
+
+}
+
+.btn-projects {
+
+
+  padding: 5px;
+  margin: 2px;
+  width: 45%;
+  font-size: 0.7rem;
+
+}
+
+}
+
+@media only screen and (max-width: 1000px)
+{
+.ind-project {
+
+     width: 80%;
+  }
+
+  li.project-list {  
+ 
+     font-size: 0.6rem;
+     margin-top: -10px;
+}
+
+.btn-projects {
+
+  
+  padding: 5px;
+  margin: 2px;
+  width: 35%;
+  font-size: 0.5rem;
+
+}
+
+.project-image-size {
+
+  width:80%;
+  height:250px;
+
+
+}
+
+}
+
+@media only screen and (max-width: 700px)
+{
+  .ind-project{
+
+  display:grid;
+  justify-self: center;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+ 
+}
+
+.project-image-size {
+
+  width:85%;
+  height:220px;
+
+
+}
+
+.project-header {
+
+  text-align: center;
+  font-family: 'saira', sans-serif;
+  font-size: 0.7rem;
+  margin-top: -5px;
+}
+
+
+.header-para-project-wrapper {
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  justify-self: center;
+  padding: 10px;
+  width:70%;
+  height: 80%;
+  border-radius: 3px;
+ 
+}
+  
+li.project-list {
+
+  
+  color: black;
+  font-family: 'karla', sans-serif;
+  font-size: 0.4rem;
+  margin-top: 0px;
+  
+
+} 
+
+.btn-projects {
+
+  background-color: rgb(197, 89, 98);
+  border:1px solid white;
+  border-radius: 3px;
+  padding: 2px;
+  margin: 2px;
+  width: 35%;
+  text-align: center;
+  font-family: 'karla', sans-serif;
+  font-size: 0.3rem;
+  
+}
+
+.project-list-wrapper {
+
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 90%;
+  margin-top: -10px;
+  margin-left: -25px;
+
+}
+}
+
+.project-btn-wrapper {
+
+  display: flex;
+  justify-content: center;
+  
+}
+
+.btn-projects {
+  background-color: rgb(197, 89, 98);
+  border:2px solid white;
+  border-radius: 3px; 
+  padding: 3px;
+  margin: 5px auto; 
+  width: 45%;
+  text-align: center;
+  font-family: 'karla', sans-serif;
+  
+}
+
+
+
+.btn-projects:hover {
+
+  transform: scale(1.05);
+  
+}
+
+a {
+
+  text-decoration: none;
+  color: black;
+  letter-spacing: 0.2em;
+  
+}
+
+.header-para-project-wrapper {
+
+   display: flex;
+   flex-direction: column; 
+   align-self: center;
+   background-color: white;
+   padding: 5px 0;
+   width:80%;
+   border-radius: 3px;
+   box-shadow: 0 3px 10px rgba(14, 13, 13, 0.548);
+}
+
+li.project-list {
+
+  
+  color: black;
+  padding:5px;
+  font-family: 'karla', sans-serif;
+
+}
+
+
+.git.fab{
+
+  margin-left: -10px;
+  font-size: 1em;
+}
+
+.under-construct {
+
+  color: white;
+  opacity: 20%;
+  font-family: 'saira', sans-serif;
+  text-align: center;
+  margin-top: 50%;
+  font-size: 1em;
+}
+
