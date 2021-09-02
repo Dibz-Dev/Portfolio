@@ -73,16 +73,12 @@ font-family: 'saira', sans-serif;
 
         display:flex;
         justify-content: space-around;
-        /* align-items: center; */
         list-style-type: none;
         font-size: 1.3em;
         font-family: 'saira', sans-serif;
         letter-spacing: 0.2em;
         width:100%;
-       
-        
-        
-        
+      
         
     }
 
@@ -98,6 +94,7 @@ font-family: 'saira', sans-serif;
 
       color:white;
       font-weight: 500;
+      text-align: center;
     }
     
   
@@ -120,7 +117,9 @@ font-family: 'saira', sans-serif;
 
            .nav.active{ 
 
+           width: 110%;
            height:100vh;
+           margin-left: -20px;
            
          }
 
@@ -134,9 +133,20 @@ font-family: 'saira', sans-serif;
 
            display: flex;
            flex-direction: column;
-           justify-content: space-evenly;
            font-size: 1.5em;
            
+           
+           
+          }
+
+          [data-list-style] {
+
+            color:white;
+            font-weight: 500;
+            text-align: center;
+            padding:0;
+           
+            
           }
          
      
@@ -322,30 +332,6 @@ font-family: 'saira', sans-serif;
     color: black;
     
   }
-
- 
- 
- 
-  
-  /* CONTINUE READING */
-
-  
-  #story-config {
-
-    padding:50px;
-  }
- 
-
-
-.btn-style {
-
-   padding:10px;
-   font-size: 1em;
-   border-radius: 10px;
-   cursor: pointer;
-   background-color:#7854AB;
-   color: white;
-}
 
 
 @media (max-width: 500px)
