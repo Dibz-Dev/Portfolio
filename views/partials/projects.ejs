@@ -64,7 +64,7 @@
 }
     
 
-.project-bg{
+.project-bg {
 
   display: grid;
   grid-template-columns: 1fr;
@@ -91,8 +91,6 @@
 
 }
 
-
-
 img {
 
   margin: 0px 2px;
@@ -112,7 +110,7 @@ img {
   
 }
 
-.ind-project{
+.ind-project {
   
   padding: 10px;
   background-color: rgb(197, 89, 98);
@@ -166,11 +164,14 @@ a {
    display: flex;
    flex-direction: column; 
    align-self: center;
+   justify-self: center;
    background-color: white;
    padding: 5px 0;
    width:80%;
    border-radius: 3px;
    box-shadow: 0 3px 10px rgba(14, 13, 13, 0.548);
+
+
 }
 
 li.project-list {
@@ -184,13 +185,13 @@ li.project-list {
 }
 
 
-.git.fab{
+.git.fab {
 
   margin-left: -10px;
   font-size: 1em;
 }
 
-@media screen and (max-width: 1200px)
+/* @media screen and (max-width: 1200px)
 {
   .ind-project {
   
@@ -247,22 +248,19 @@ li.project-list {
 
 }
 
-}
+} */
 
-@media screen and (max-width: 700px)
+@media screen and (max-width: 500px) 
 {
   .ind-project{
 
-  display:grid;
-  justify-self: center;
-  grid-template-columns: 1fr 1fr;
-  width: 100%;
+  max-width: 100%;
  
 }
 
 .project-image-size {
 
-  width:85%;
+  width:80%;
   height:220px;
 
 
@@ -279,56 +277,50 @@ li.project-list {
 
 .header-para-project-wrapper {
 
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  justify-self: center;
-  padding: 10px;
-  width:80%;
-  height: 80%;
-  border-radius: 3px;
+      display: flex;
+      flex-direction: column;
+      align-self: center;
+      justify-self: center;
+      padding: 5px;
+      width:80%;
+      border-radius: 3px;
  
 }
   
 li.project-list {
 
   
-  color: black;
-  font-family: 'karla', sans-serif;
-  font-size: 0.4em;
+  font-size: 0.2em;
   margin-top: 0px;
+  margin-left: -20px;
   
 
 } 
 
 .btn-projects {
 
-  background-color: rgb(197, 89, 98);
-  border:1px solid white;
-  border-radius: 3px;
   padding: 2px;
   margin: 2px;
   width: 35%;
-  text-align: center;
-  font-family: 'karla', sans-serif;
   font-size: 0.3rem;
   
 }
 
-.project-list-wrapper {
+.btn-projects:hover {
 
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  width: 90%;
-  margin-top: -10px;
-  margin-left: -25px;
+ transform: none;
 
 }
+
+a {
+
+letter-spacing: normal;
+
 }
 
-@media screen and (max-width: 400px)
+}
+
+/* @media screen and (max-width: 400px)
       {
 
       li.project-list {
@@ -339,7 +331,7 @@ li.project-list {
 
 } 
 
-      }
+      } */
 
 
 
