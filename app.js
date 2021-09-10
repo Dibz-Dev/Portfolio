@@ -12,7 +12,7 @@ const app = express();
 // MONGODB CONNECTION------------------------------------
 
 const dbURI = process.env.API_KEY;
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
 .then((result) => app.listen(PORT, console.log('listening to PORT ' + `${PORT}`)))
 .catch((err) => console.log(err))

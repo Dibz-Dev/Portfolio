@@ -11,14 +11,18 @@ const body = document.querySelector('body');
 const form = document.querySelector('#contact');
 const html = document.querySelector('html');
 const feedback = document.querySelector('#feedback-container');
-
+const list = document.querySelectorAll('[data-list-style]');
 
 
 // const api_Url = "https://dibspersonal.herokuapp.com/getFeedback";
 // const api_Url = "https://localhost:3000/getFeedback";
+list.forEach(item => {
+  item.addEventListener('click', () => {
 
+    closeNav()
+})
 
-
+})
 
         
  container.addEventListener('click', () => {
