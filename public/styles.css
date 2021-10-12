@@ -137,6 +137,10 @@ html {
          
        }
 
+       .logo {
+         display: none;
+       }
+
            .nav.active{ 
 
            width: 110%;
