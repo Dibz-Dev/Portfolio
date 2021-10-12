@@ -9,6 +9,28 @@ font-family: 'saira', sans-serif;
 }
 
 
+.logo {
+
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  width: 100px;
+  height: 100px;
+  opacity: 1;
+  border: none;
+
+}
+
+html {
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: rgb(85, 174, 209);
+  box-sizing: border-box;
+  
+  
+}
+
 
   
    
@@ -250,15 +272,7 @@ font-family: 'saira', sans-serif;
  
    /* -------------------------------------------------BODY---------------------------------------------------- */
    
-   html {
-
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    background-color: gainsboro;
-    box-sizing: border-box;
-    
-    
-  }
+  
 
   
 
@@ -274,7 +288,7 @@ font-family: 'saira', sans-serif;
       font-family: 'karla', sans-serif;
       font-size: 1.7em;
       font-weight: 200;
-      color:gray;
+      color:gainsboro;
       margin-top: -50px;
       margin-bottom: 30px;
       

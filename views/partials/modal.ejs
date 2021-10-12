@@ -21,10 +21,14 @@
                <i class="fas fa-futbol"></i>
                <i class="fas fa-football-ball"></i>
                </li>
-               <li>Beach</li>
-               <li>Sunday Roast</li>
+               <li>The Ocean</li>
+               <li>New Zealand</li>
                <li>Food</li>
                <li>Travelling</li>
+               <li>The Mountains</li>
+               <li>Sunday Roasts</li>
+             
+               
                
             </ul>
              
@@ -48,6 +52,8 @@
            <li>Node.js</li>
            <li>Express</li>
            <li>MongoDB</li>
+           <li>Figma</li>
+           <li>Redux</li>
         </ul>
          
        
@@ -68,22 +74,36 @@
   .btn-about {
       padding:10px;
       margin:0 10px;
-      border-radius: 3px;
+      border-radius: 5px;
       border: none;
       outline: none;
       cursor: pointer;
       color: black;
       font-weight: bold;
-      background-color: rgb(197, 89, 98);
+      background-color: rgb(85, 174, 209);
+      border: 2px solid white;
       font-family: 'saira', sans-serif;
       width:170px;
   }
 
   .btn-about:hover {
+
      transform: scale(1.1);
      background-color: white;
+     color: black;
      border: none;
+     animation-name: borderGrow ;
+     animation-duration: 2s;
+     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
   }
+
+@keyframes borderGrow {
+    0% {
+        transform: scale(1);
+    } 100% {
+        transform: scale(1.1);
+    }
+}
 
   .header-times, .tech-times {
       display: flex;
@@ -148,7 +168,7 @@
       position: fixed;
       left: 50%;
       top:20%;
-      height:320px;
+      height:350px;
       width:350px;
       padding: 30px;
       transform: translate(-50% ) scale(1);
@@ -173,7 +193,7 @@
           padding: 3px 0px 5px 10px;
           line-height: 1em;
           letter-spacing: 0.2em;
-          color: rgb(197, 89, 98);
+          color: rgb(4, 134, 22);
           
       }
 
