@@ -4,6 +4,7 @@ const clickAnyNav = document.querySelectorAll('.h-list');
 
 const aboutToolsBtn = document.querySelectorAll('[data-modal-target]');
 const closeBtn = document.querySelectorAll('.times');
+const closeProject = document.querySelectorAll('.project-times');
 const overlay = document.querySelector('#overlay');
 const about = document.querySelector('#about');
 const tools = document.querySelector('#tools');
@@ -12,6 +13,10 @@ const form = document.querySelector('#contact');
 const html = document.querySelector('html');
 const feedback = document.querySelector('#feedback-container');
 const list = document.querySelectorAll('[data-list-style]');
+
+const weather = document.querySelector('.project-weather')
+const gumboot = document.querySelector('.project-gumboot')
+const shopean = document.querySelector('.project-shopean')
 
 
 // const api_Url = "https://dibspersonal.herokuapp.com/getFeedback";
@@ -40,7 +45,7 @@ list.forEach(item => {
 
  })
 
- function openNav() {
+   function openNav() {
 
     const top = document.getElementById('top')
     const middle = document.getElementById('middle')
@@ -63,7 +68,7 @@ list.forEach(item => {
     middle.setAttribute('class', 'removable')
     bottom.classList.remove('active')
     nav.classList.remove('active')
-
+    html.classList.remove('active')
 
  }
 
@@ -77,9 +82,21 @@ list.forEach(item => {
 
      closeBtn.forEach(btn => {
      btn.addEventListener('click', () => {
-     const close = btn.closest('.modal-wrapper')
+     let close = btn.closest('.modal-wrapper')
      closeModal(close)
      })
+ })
+
+ closeProject.forEach(project => {
+
+  project.addEventListener('click', () => {
+    let close = project.closest('.ind-project')
+
+    if(!weather.classList.contains('hide') || !gumboot.classList.contains('hide') || !shopean.classList.contains('hide')) {
+      closeModal(close)
+    }
+    
+  })
  })
 
 
@@ -90,6 +107,12 @@ list.forEach(item => {
      modal.classList.remove('active')
      overlay.classList.remove('active')
      html.classList.remove('active')
+
+     weather.classList.add('hide')
+     shopean.classList.add('hide')
+     gumboot.classList.add('hide')
+
+
  }
  
 
@@ -111,9 +134,11 @@ list.forEach(item => {
    about.classList.remove('active')
    tools.classList.remove('active')
    html.classList.remove('active')
+   weather.classList.add('hide')
+   shopean.classList.add('hide')
+   gumboot.classList.add('hide')
 
-
-  console.log('clicked')
+ 
  })
 
  body.addEventListener('wheel', () => {
@@ -169,3 +194,24 @@ list.forEach(item => {
   }
 
 //  getFeedback()
+
+const image = document.querySelectorAll('img');
+
+image.forEach(img => {
+
+  img.addEventListener('click', (e) => {
+
+  
+    overlay.classList.add('active')
+    html.classList.add('active')
+    e.target.classList.contains('weatherThumbnail') && weather.classList.remove('hide');
+    e.target.classList.contains('shopeanThumbnail') && shopean.classList.remove('hide');
+    e.target.classList.contains('gumbootThumbnail') && gumboot.classList.remove('hide');
+
+    // if(!openModal) {
+    //   openModal()
+    // } else {
+    //   closeModal()
+    // }
+  })
+})

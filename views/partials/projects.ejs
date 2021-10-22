@@ -2,74 +2,109 @@
 
 <div id="projects-pane" class="projects-wrapper">
 
-        <div class="page-header">                      
+        <div class="page-header project-head">                      
           <h1>Projects</h1>
         </div> 
-
+<!-- 
+        <div class="project-shape"></div> -->
         <div class="project-bg">
-              <div class="ind-project project-1">
-                
-                  <div class="project-image-wrapper">
-                      <img class="project-image-size" src="shopean.main.jpg" alt="image of main Shopean page">
-                  </div>
-                  
-                  <div class="header-para-project-wrapper">
-                    <h1 class="project-header">Shopean</h1>
-                  <ul class="project-list-wrapper">
-                        <li class="project-list">A functional Shopping list, Shopean stores shopping items, which can then be dynamically added to your shopping list in their respective categories.</li> 
-                        <li class="project-list">Backend: Server created using Node.js/Express to create and authenticate user profiles, MongoDB. </li>
-                        <li class="project-list">Frontend: Html, CSS and vanilla Javascript, hosted on Heroku.</li>
-                  </ul>
-                  <div class="project-btn-wrapper">
-                        <button class="btn-projects"><a href="https://shopean.herokuapp.com">Visit Live Site</a></button>
-                        <button class="btn-projects"><a href="https://github.com/Dibz-Dev/shopean">Source Code</a></button>
-                  </div>
-                </div>
-                
-              
-              </div>
-          <div class="ind-project project-2">
-                <div class="project-image-wrapper">
-                  <img class="project-image-size" src="weatherWatchNight.jpg" alt="Weather watch interface page">
-                </div>
-               <div class="header-para-project-wrapper">
-                      <h1 class="project-header">Weather Watch</h1>
-                  <ul class="project-list-wrapper"> 
-                        <li class="project-list">A simple weather app allowing you to check the current weather in any city around the world.</li>
-                        <li class="project-list">Weather watch takes user input and returns weather info from the AccuWeather API</li>
-                        <li class="project-list">Built with HTML, CSS and Javascript</li>
-                  </ul>
-                  <div class="project-btn-wrapper">
-                          <button class="btn-projects"><a href="https://dibs-weatherwatch.netlify.app/">Visit Live Site</a></button>
-                          <button class="btn-projects"><a href="https://github.com/Dibz-Dev/WeatherWatch">Source Code</a></button>
-                  </div>
-               </div>
-              
-            </div>
-                <div class="ind-project project-3" >
-                  <div class="project-image-wrapper">
-                    <img class="project-image-size" src="gumbootMenumob.jpg" alt="The Gumboot menu page">
-                  </div>
-                 <div class="header-para-project-wrapper">
-                        <h1 class="project-header">The Gumboot</h1>
-                    <ul class="project-list-wrapper"> 
-                          <li class="project-list">A Small website for a new cafe showcasing Menus, Contact info as well as general info and a Picture gallery.</li>
-                          <li class="project-list">Built with React, using express for the backend allowing customers to check out customer reviews as well as allowing them to leave their own. Icons designed using Figma.</li>
+
+          <div>
+            <img class="thumbnailProject shopeanThumbnail" src="shopean.png" alt="">
+          </div>
+          <div>
+            <img class="thumbnailProject weatherThumbnail" src="weatherWatch.png" alt="">
+            
+          </div>
+
+          <div>
+            <img class="thumbnailProject gumbootThumbnail" src="Gumboot.png" alt="">
+            
+          </div>
+         
+          <div class="ind-project project-shopean hide">
+            <span class="project-times">&times;</span>
+            <h2 class="project-modal-header">Shopean</h2>
+                <img class="project-image-size" src="shopean.png" alt="">
+                <div>
+                    <ul class="project-list">
+                      <li>A functional Shopping list, Shopean stores shopping items, which can then be dynamically added to your shopping list in their respective categories.</li>
+                      <li>Backend: Server created using Node.js/Express to create and authenticate user profiles, MongoDB. </li>
+                      <li>Frontend: Html, CSS and vanilla Javascript, hosted on Heroku.</li>
                     </ul>
                     <div class="project-btn-wrapper">
-                            <button class="btn-projects"><a href="https://thegumboot.herokuapp.com/">Visit Live Site</a></button>
-                            <button class="btn-projects"><a href="https://github.com/Dibz-Dev/theGumboot">Source Code</a></button>
+                      <button class="btn-projects"><a href="https://shopean.herokuapp.com">Visit Live Site</a></button>
+                      <button class="btn-projects"><a href="https://github.com/Dibz-Dev/shopean">Source Code</a></button>
                     </div>
-                 </div>
-                </div>
-        
-        </div>
+              </div>
+          </div>
+
+          <div class="ind-project project-weather hide">
+            <span class="project-times">&times;</span>
+            <h2 class="project-modal-header">Weather Watch</h2>
+              <img class="project-image-size" src="weatherWatch.png" alt="">
+              <div>
+                  <ul class="project-list">
+                    <li>A simple weather app allowing you to check the current weather in any city around the world.</li>
+                    <li>Weather watch takes user input and returns weather info from the AccuWeather API</li>
+                    <li>Built with HTML, CSS and Javascript</li>
+                  </ul>
+                  <div class="project-btn-wrapper">
+                    <button class="btn-projects"><a href="https://dibs-weatherwatch.netlify.app/">Visit Live Site</a></button>
+                    <button class="btn-projects"><a href="https://github.com/Dibz-Dev/WeatherWatch">Source Code</a></button>
+                  </div>
+              </div>
+          </div>  
+
+          <div class="ind-project project-gumboot hide">
+            <span class="project-times">&times;</span>
+            <h2 class="project-modal-header">The Gumboot</h2>
+              <img class="project-image-size" src="Gumboot.png" alt="">
+              <div>
+                  <ul class="project-list">
+                    <li>A Small website for a new cafe showcasing Menus, Contact info as well as general info and a Picture gallery.</li>
+                    <li>Built with React, using express for the backend allowing customers to check out customer reviews as well as allowing them to leave their own. Icons designed using Figma.</li>
+                  </ul>
+                  <div class="project-btn-wrapper">
+                      <button class="btn-projects"><a href="https://thegumboot.herokuapp.com/">Visit Live Site</a></button>
+                      <button class="btn-projects"><a href="https://github.com/Dibz-Dev/theGumboot">Source Code</a></button>
+                  </div>
+              </div>
+          </div>
+          
   </div>
 
 
 
 
 <style>
+  
+.project-times {
+
+  position: absolute;
+  color: white;
+  right: 3%;
+  top: 1%;
+  font-size: 3em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.project-times:hover {
+
+  transform: scale(1.1);
+}
+
+.project-shopean-block, .project-weather-block, .project-gumboot-block {
+
+  display: none;
+}
+
+.project-shopean-block.active{
+
+  display: block;
+  z-index: 3;
+}
 
 .projects-wrapper {
 
@@ -77,284 +112,289 @@
   width:100%;
   
 }
+.project-head {
+
+  margin-top: -10px;
+}
+
+.project-shape {
+
+  background: url(roundedrectangle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -30px;
+  width: 100%;
+  height: 85vh;
+ 
+}
+
+.project-list {
+
+  margin-top: 100px;
+}
+
+.project-list li {
+
+  color: white;
+  font-family: 'karla', sans-serif;
+  line-height: 1.1em;
+
+}
+
+.thumbnailProject {
+
+  width: 300px;
+  height: 200px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.thumbnailProject:hover {
+
+  transform: scale(1.1);
+  z-index: -1;
+}
     
 
 .project-bg {
 
   display: grid;
-  grid-template-columns: 1fr;
-  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  width:90%;
-  margin:auto;
+  width:80%;
+  margin: auto;
   padding: 10px 5px;
+  /* border: 1px solid black; */
+
 }
 
-.project-header {
 
-  text-align: center;
-  font-family: 'saira', sans-serif;
-  font-size: 1.4rem;
-  margin-top: -10px;
+
+.project-modal-header {
+
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%);
+  color: white;
+  font-family: 'Special Elite', sans-serif;
+
 }
 
 .project-image-size {
 
-  width:65%;
-  height:350px;
-  margin: auto;
+  width:100%;
+  height:300px;
+  margin: 80px auto 0 auto;
+  border-radius: 7px;
 
-}
-
-img {
-
-  margin: 0px 2px;
-  border-radius: 3px;
-  border: 2px solid gainsboro;
-
-}
-
-.project-image-wrapper {
-
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  margin: 10px 0px;
-
-  
-  
 }
 
 .ind-project {
   
-  padding: 10px;
-  background-color: rgb(85, 174, 209);
-  border-radius: 7px;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%) scale(1);
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: rgba(34, 34, 34, 0.836);
   display:grid;
-  justify-self: center;
   grid-template-columns: 1fr 1fr;
   width:70%;
-  box-shadow: 0 3px 10px rgba(14, 13, 13, 0.548);
-  
+  height:70vh;  
+  z-index: 20;
+  animation: growUp;
+  animation-duration: 3s;
+
+}
+
+@keyframes growUp {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 10
+  }
+}
+
+.hide {
+
+display: none;
+transform: scale(0);
 }
 
 .project-btn-wrapper {
 
-display: flex;
-justify-content: center;
+   display: flex;
+   justify-content: center;
 
 }
 
 .btn-projects {
 
   background-color: rgb(85, 174, 209);
-  border:2px solid white;
   color: white;
   border-radius: 5px; 
   padding: 5px;
-  margin: 5px auto; 
-  width: 45%;
+  margin: 15px 5px 50px 5px; 
+  width: 30%;
   text-align: center;
   font-family: 'karla', sans-serif;
+  border: none;
+  outline: none;
   
 }
-
-
 
 .btn-projects:hover {
 
   color: black;
   background-color: white;
-  border: 2px solid rgb(85, 174, 209);
   transform: scale(1.05);
   
 }
 
 a {
 
-  text-decoration: none;
-  color: black;
-  letter-spacing: 0.2em;
-  
-}
-
-.header-para-project-wrapper {
-
-   display: flex;
-   flex-direction: column; 
-   align-self: center;
-   justify-self: center;
-   background-color: white;
-   padding: 5px 0;
-   width:80%;
-   border-radius: 3px;
-   box-shadow: 0 3px 10px rgba(14, 13, 13, 0.548);
-
+text-decoration: none;
+color: black;
 
 }
 
-li.project-list {
+@media (max-width: 1100px) {
+
+  .projects-wrapper {
+
+   width:100%;
+
+}
 
   
-  color: black;
-  padding:5px;
-  font-family: 'karla', sans-serif;
-  font-size: 0.8em;
+  .thumbnailProject {
 
-}
-
-
-.git.fab {
-
-  margin-left: -10px;
-  font-size: 1em;
-}
-
-@media screen and (max-width: 1200px)
-{
-  .ind-project {
-  
-  width: 80%;
-}
-
-li.project-list {  
-
-  font-size: 0.9em;
- 
-
-}
-
-.btn-projects {
-
-
-  padding: 5px;
-  margin: 2px;
-  width: 45%;
-  font-size: 0.7rem;
-
+    width: 270px;
+    height: 200px;
+    border-radius: 3px;
+    cursor: pointer;
 }
 
 }
 
-@media screen and (max-width: 1000px)
-{
+@media (max-width: 1000px) {
+
+  .projects-wrapper {
+
+    width:100%;
+
+}
+
+
+.thumbnailProject {
+
+    width: 200px;
+    height: 150px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.project-image-size {
+
+    width:90%;
+    max-width: 350px;
+    height:200px;
+    margin: 100px auto 0 auto;
+    border-radius: 7px;
+
+}
+
 .ind-project {
 
-     width: 80%;
-  }
-
-  li.project-list {  
- 
-     font-size: 10px;
-     margin-top: -10px;
-}
-
-.btn-projects {
-
-  
-  padding: 5px;
-  margin: 2px;
-  width: 35%;
-  font-size: 7px;
-
-}
-
-.project-image-size {
-
-  width:80%;
-  height:250px;
-
-
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 60vh;
 }
 
 }
 
-@media screen and (max-width: 700px) 
-{
-  .ind-project{
+@media (max-width: 750px) {
 
-  width: 105%;
-  
- 
-}
-
-.project-image-size {
+.projects-wrapper {
 
   width:100%;
-  height:250px;
-
 
 }
 
-.project-header {
+.project-modal-header {
 
-  text-align: center;
-  font-family: 'saira', sans-serif;
-  font-size: 0.7rem;
-  margin-top: -5px;
+  top: 5%;
 }
 
+.project-bg {
 
-.header-para-project-wrapper {
-
-      display: flex;
-      flex-direction: column;
-      align-self: center;
-      justify-self: center;
-      height: 220px;
-      width:80%;
-      border-radius: 3px;
+  display: flex;
+  flex-direction: column;
  
 }
-  
-li.project-list {
 
-  
-  font-size: 7px;
-  margin-top: -10px;
-  margin-left: -20px;
-  
+.thumbnailProject {
 
-} 
-
-.btn-projects {
-
-  padding: 2px;
-  margin: 2px;
-  width: 45%;
-  font-size: 5px;
-  
+  width: 300px;
+  height: 200px;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-.btn-projects:hover {
+.project-image-size {
 
- transform: none;
+    width:80%;
+    max-width: 300px;
+    height:200px;
+    margin: 100px auto 0 auto;
+    border-radius: 7px;
 
 }
 
-a {
+.ind-project {
 
-letter-spacing: 0.3em;
+  top: 2%;
+  display:grid;
+  grid-template-columns: 1fr;
+  height: 90vh;
+  width: 90%;
+}
 
+.project-list {
+
+    margin-top: 30px;
+    font-size: 15px;
 }
 
 }
 
-@media screen and (max-width: 500px)
-      {
+@media (max-width: 350px) {
 
-      li.project-list {
+  .thumbnailProject {
 
-      font-size: 6px;
-      margin-top: 0px;
+    width: 250px;
+    height: 150px;
+  }
+  .project-list {
+
+   margin-top: 30px;
+   font-size: 12px;
+}
+  .project-image-size {
+
+   height:150px;
+}
+
+.ind-project {
+
+  margin-top: -20px;
+}
 
 
-} 
-
-      }
-
-
-
+}
 
 
 </style>
