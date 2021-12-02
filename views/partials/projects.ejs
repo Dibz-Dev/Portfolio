@@ -74,7 +74,7 @@
           
   </div>
 
-
+</div>
 
 
 <style>
@@ -110,11 +110,13 @@
 
   z-index: -1;
   width:100%;
+  margin-top: 50px;
+  
   
 }
 .project-head {
 
-  margin-top: -10px;
+  margin-top: 0px;
 }
 
 .project-shape {
@@ -147,12 +149,16 @@
   height: 200px;
   border-radius: 3px;
   cursor: pointer;
+  transition: 0.5s;
+  transition: ease-in-out;
 }
 
 .thumbnailProject:hover {
 
-  transform: scale(1.1);
+  transform: scale(1.025);
   z-index: -1;
+  transition: 0.5s;
+  transition: ease-in-out;
 }
     
 
@@ -244,13 +250,15 @@ transform: scale(0);
   border: none;
   outline: none;
   
+  
 }
 
 .btn-projects:hover {
 
   color: black;
   background-color: white;
-  transform: scale(1.05);
+  transform: scale(1.025);
+  
   
 }
 

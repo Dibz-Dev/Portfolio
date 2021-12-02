@@ -1,7 +1,3 @@
-<div id="buttons" class="btn-wrapper">
-    <button class="btn-about" data-modal-target="#about">Things I Love...</button>
-    <button class="btn-about" data-modal-target="#tools">My Tool Box</button>
-</div>
 
 
 <div id="about" class="modal-wrapper">
@@ -49,17 +45,15 @@
            <li>HTML</li>
            <li>CSS </li>
            <li>Javascript</li>
-           <li>React</li>
            <li>Node.js</li>
+           <li>React</li>
+           <li>Redux</li>
+           <li>Next</li>
            <li>Express</li>
            <li>MongoDB</li>
            <li>Figma</li>
-           <li>Redux</li>
         </ul>
          
-       
-
-
 </div>
 
 <div id="overlay" class="overlay"></div>
@@ -67,39 +61,8 @@
 
 <style>
 
-.btn-wrapper {
-    
-    margin-top: 0px;
-    margin-left: -30px;
-    padding: 10px;
-  }
 
-  .btn-about {
-
-      padding:5px;
-      margin:0 10px;
-      border-radius: 5px;
-      border: none;
-      outline: none;
-      cursor: pointer;
-      color: black;
-      font-weight: bold;
-      background-color: #3298C3;
-      font-family: 'saira', sans-serif;
-      width: 120px;
-  }
-
-  .btn-about:hover {
-
-     transform: scale(1.1);
-     background-color: white;
-     color: black;
-     border: none;
-     animation-name: borderGrow ;
-     animation-duration: 2s;
-     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
-  }
-
+ 
 @keyframes borderGrow {
     0% {
         transform: scale(1);
@@ -111,18 +74,18 @@
   .header-times, .tech-times {
       
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
       align-items: flex-start;
       padding: 10px;
+      width: 100%;
   }
 
   .modal-header {
 
-      margin-top: -20px;
-      padding-left: 20px;
+      margin-top: -50px;
       font-family: 'love ya like a sister', sans-serif;
       color: white;
-      font-size: 2em;
+      font-size: 3.5em;
   }
 
   .times{
@@ -130,7 +93,7 @@
       position: absolute;
       top: -20%;
       right: -35%;
-      font-size: 3em;
+      font-size: 4em;
       font-weight: bold;
       cursor: pointer;
       color: white;
@@ -216,8 +179,9 @@
       
       
 
-      .modal-items{
-          margin-top: -7px;
+      .modal-items {
+
+          margin-top: -10px;
           justify-content: center;
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -231,6 +195,7 @@
           padding: 3px 0px 5px 10px;
           line-height: 1em;
           letter-spacing: 0.2em;
+          font-size: 1.4em;
           
           
       }

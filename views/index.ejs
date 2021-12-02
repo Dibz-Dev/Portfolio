@@ -6,6 +6,8 @@
 
 <body class="active">
 <!---------------------------------------------- HEADERR ------------------------------------------------->
+<div class="content">
+<div>
 <%-include('./partials/nav.ejs') %>
 
    
@@ -14,12 +16,15 @@
           <div class="intro">
                     <h1 class="me-header" style="margin-left: 50px;">Benjamin</h1>
                     <h1 class="me-header" style="margin-top: -30px; margin-left: 50px; color: grey;"> Dibley</h1>
-                    <p class="sub-role" style="margin-top: -15px; margin-left: 50px;">Hi Im Ben, welcome to my Portfolio.</p>
+                    <p class="sub-role" style="margin-top: -15px; margin-left: 50px;">Kia Ora! Welcome to my Portfolio.</p>
+
+                    <div id="buttons" class="btn-wrapper">
+                      <button class="btn-about" data-modal-target="#about">Things I Love...</button>
+                      <button class="btn-about" data-modal-target="#tools">My Tool Box</button>
+                  </div>
+                  
           </div>
     
-                     
-          
-     
       
       <!--------------------------------------BODY WORK ------------------------------------------------>
       <div class="me-container">
@@ -38,7 +43,7 @@
 
        
         <%-include('./partials/projects.ejs') %>
-        <div class="project-shopean-block active"> <%-include('./partials/subPartials/shopean.ejs') %> </div>
+        <!-- <div class="project-shopean-block active"> <%-include('./partials/subPartials/shopean.ejs') %> </div> -->
      
 
         <%-include('./partials/contact.ejs') %>
@@ -46,12 +51,12 @@
               
 
         <!-- <%-include('./partials/feedback.ejs') %> -->
-
+      </div>
         <%-include('./partials/footer.ejs') %>
 
 
-
-
+      </div>
+     
 
 </body>
 </html>

@@ -5,32 +5,19 @@
         <h1>Contact</h1>
       </div>
     
-      
-    
-       
-          
-          
     <form id="contact" class="form-container" action="/api/feedback" method="POST" autocomplete="off">
         <div class="comments-box">
             <label class="label-style" for="name">Name</label>
 
-            <input class="name-style" id="name" name="name" type="text" placeholder="Name" autocomplete="off" required>
+            <input class="name-style" id="name" name="name" type="text" autocomplete="off" required>
             <label class="label-style" for="comments">Feedback</label>
 
-            <textarea class="area-style" id="feedback" name="feedback" type="text" placeholder="How did you find my portfolio?" required></textarea>
+            <textarea class="area-style" id="feedback" name="feedback" type="text" placeholder="How did you find my portfolio?" required cols="30" rows="15"></textarea>
         </div>
             <button class="submit" type="submit">Submit</button>
     </form>
 
-    <div class="email-contact">
-        <h2 class="my-email">ben.dibley26@gmail.com</h2>
-    </div> 
-    <div class="socials">
-        <a class="social-link" href="https://twitter.com/Dibdevs"><i class="fab fa-twitter"></i></a> 
-        <a class="social-link" href="https://github.com/Dibz-Dev"> <i class="fab fa-github"></i></a>
-        <a class="social-link" href="https://www.linkedin.com/in/dibs-dev/"><i class="fab fa-linkedin"></i></a>
-  </div> 
-
+    
 </div>
 
 
@@ -39,7 +26,6 @@
 
 .contact {
 
-    position: relative;
     z-index: 0;
     height: 80vh;
    
@@ -50,9 +36,12 @@
 .form-container{
 
     position: relative;
-    padding: 50px 0px;
-    width:60%;
-    /* background-color: #DBCF65; */
+    padding: 30px 0px;
+    width:50%;
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: auto;
     
 }
 
@@ -62,18 +51,10 @@
     font-family: 'karla', sans-serif;
 }
 
-.email-contact {
-
-    position: absolute;
-    top: 50%;
-    right: 5%;
-    margin: 0;
-    z-index: 2;
-}
 
 .name-box, .email-box, .comments-box {
 
-    width:50%;
+    width:80%;
     margin: auto;
   
 }
@@ -84,54 +65,70 @@
   color: black;
   letter-spacing: 0.2em;
   font-family: 'love ya like a sister', sans-serif;
+  font-size: 1.3em;
   font-weight: 500;
   margin: 5px auto;
   width:100%;
   
 }
 
-.input-style{
-  height:30px;
-  border: 1px solid black;
-  border-radius: 2px;
-  margin:10px 0px;
-  width:100%;
-  outline: none;
-  
-}
 
 .area-style{
-  height:100px;
+
   width:100%;
   border-radius: 2px;
-  border: 1px solid black;
+  border: none;
+  outline: none;
+  background-color: #c2c4c4d0;
+  font-size: 1.2em;
+  padding: 5px;
+}
+
+.area-style::placeholder {
+
+  padding: 5px;
+}
+
+.area-style:focus {
+
+background-color: white;
+border: 1px solid #3298c3d0;
 }
 
 .name-style {
  
-    height: 25px;
+    height: 60px;
     width:100%;
     border-radius: 2px;
-    border: 1px solid black;
+    border: none;
+    outline: none;
     margin-bottom: 10px;
+    background-color: #c2c4c4d0;
+    font-size: 1.2em;
+    padding: 5px;
 }
 
+.name-style:focus {
+ 
+ border: 1px solid #3298c3d0;
+ background-color: white;
+}
 .submit{
     
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
     margin-top: 10px;
+    margin-left: 50%;
+    transform: translate(-50%);
     padding: 5px;
     border-radius: 5px;
     border: none;
     outline: none;
     cursor: pointer;
-    color: black;
+    color: white;
     font-weight: bold;
-    background-color: #DBCF65;
+    background-color: #3298C3;
     font-family: 'saira', sans-serif;
-    width:100px;
+    width:140px;
+    height: 50px;
     z-index: 0;
     
 }
@@ -139,8 +136,6 @@
 .submit:hover{
  
     transform: translate(-50%) scale(1.1);
-    background-color: white;
-    color: black;
     border: none;
     animation: grow;
     animation-duration: 2s;
@@ -148,15 +143,7 @@
 
 }
 
-.socials {
-    
-    position: absolute;
-    top: 64%;
-    right: 5%;
-    z-index: 2;
-   
-    
-  }
+
 
 @keyframes grow {
     0% {
@@ -168,71 +155,47 @@
 
 @media (max-width: 1100px) {
 
-    .contact {
+    .form-container {
 
-        height: 40vh;
-    }
-
-    .email-contact {
-
-        top: 88%;
-        
-    }
-
-    .socials {
-
-        margin-top: 200px;
+        width: 90%;
+        margin: auto;
     }
 
 }
 
 @media (max-width: 1000px) {
 
-    .contact {
 
-        height: 50vh;
-    }
 }
 
 @media (max-width:750px)
 {
 
-.contact {
+    .form-container {
 
-    height: 80vh;
-    margin-bottom: 70px;
+        padding-bottom: 10px;
+        width: 90%;
+        margin: auto;
    }
 
- .email-contact {
+   .area-style {
 
-    top: 105%;
-    right:20%;
-    
- }
+    height: 100px;
+    font-size: 1em;
+   }
+   .name-style {
 
- .my-email {
-
-    font-size: 15px;
- }
-
- .socials {
-
-    margin-top: 280px;
-    right: 25%;
- }
-
-.form-container{
-    padding: 50px 0px;
-    width:70%;
-    margin: auto;
-    
-}
-.name-box, .email-box, .comments-box {
+    height: 30px;
     width:100%;
-    margin: auto;
+    border-radius: 2px;
+    border: none;
+    outline: none;
+    background-color: #c2c4c4d0;
+    font-size: 1em;
     
-    
-}
+   }
+
+
 }
 
  /* ---------------------------------------------------------------------------------------------------------- */
