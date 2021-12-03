@@ -5,16 +5,15 @@
         <h1>Contact</h1>
       </div>
     
-    <form id="contact" class="form-container" action="/api/feedback" method="POST" autocomplete="off">
+    <form id="contact" class="form-container" action="/" method="POST" autocomplete="off">
         <div class="comments-box">
             <label class="label-style" for="name">Name</label>
-
             <input class="name-style" id="name" name="name" type="text" autocomplete="off" required>
-            <label class="label-style" for="comments">Feedback</label>
 
-            <textarea class="area-style" id="feedback" name="feedback" type="text" placeholder="How did you find my portfolio?" required cols="30" rows="15"></textarea>
+            <label class="label-style" for="message">Feedback</label>
+            <textarea class="area-style" id="message" name="message" type="text" placeholder="How did you find my portfolio?" required cols="30" rows="15"></textarea>
         </div>
-            <button class="submit" type="submit">Submit</button>
+            <button id="submit-btn" class="submit" type="submit">Submit</button>
     </form>
 
     
@@ -41,7 +40,7 @@
     background-color: white;
     border-radius: 6px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin-left: 20px;
+    margin: auto;
     
 }
 

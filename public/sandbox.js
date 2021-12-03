@@ -18,10 +18,30 @@ const weather = document.querySelector('.project-weather')
 const gumboot = document.querySelector('.project-gumboot')
 const shopean = document.querySelector('.project-shopean')
 
-
+const btnSubmit = document.getElementById('submit-btn')
 // const api_Url = "https://dibspersonal.herokuapp.com/getFeedback";
 // const api_Url = "https://localhost:3000/getFeedback";
 
+
+const sendEmail = () => {
+
+  let params = {
+    name: document.getElementById('name').value,
+    message: document.getElementById('message').value,
+  }
+     emailjs.send('service_pavtgte', 'template_cam7615', params, 'user_DsAxus3X7wC8txq1JkoDj')
+     .then(function(response) {
+        console.log('SUCCESS!', response.status);
+     }, function(error) {
+        console.log('FAILED...', error);
+     });
+
+}
+
+// btnSubmit.addEventListener('click', () => {
+// console.log('click')
+ 
+// })
 
 list.forEach(item => {
   item.addEventListener('click', () => {
@@ -155,12 +175,13 @@ list.forEach(item => {
  })
 
  
-
+ 
  form.addEventListener('submit', (e) => {
-    
-  //  e.preventDefault();
+  e.preventDefault()
+  console.log('clicking')
+    sendEmail()
 
-
+    form.reset()
  })
 
 
